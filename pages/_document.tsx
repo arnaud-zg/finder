@@ -9,9 +9,11 @@ class MyDocument extends Document {
           <style jsx>
             {`
               :global(body) {
-                margin: 0;
+                color: #333;
                 font-family: -apple-system, BlinkMacSystemFont, Avenir Next,
                   Avenir, Helvetica, sans-serif;
+                font-size: 13px;
+                margin: 0;
               }
             `}
           </style>

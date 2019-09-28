@@ -26,7 +26,7 @@ const className = style({
       justifyContent: 'space-between',
     },
     '& > ul': {
-      padding: '4px 16px',
+      padding: '4px 32px',
     },
     li: {
       display: 'flex',
