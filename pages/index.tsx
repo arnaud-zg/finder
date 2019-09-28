@@ -1,9 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
+import { style } from 'typestyle'
+
+const className = style({})
 
 const Home = () => (
-  <div>
+  <div className={className}>
     <Head>
       <title>Home</title>
     </Head>
