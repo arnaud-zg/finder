@@ -1,5 +1,5 @@
+import { percent, rem } from 'csx'
 import Document, { Head, Main, NextScript } from 'next/document'
-import { percent } from 'csx'
 import { colors } from '../constants/colors'
 
 class MyDocument extends Document {
@@ -13,21 +13,21 @@ class MyDocument extends Document {
             {`
               @import url(/static/Roboto-Regular.ttf);
 
-              html,
-              body {
+              :global(html),
+              :global(body) {
                 height: 100%;
                 width: 100%;
                 padding: 0px;
                 margin: 0px;
               }
 
-              html {
+              :global(html) {
                 box-sizing: border-box;
               }
 
-              *,
-              *:before,
-              *:after {
+              :global(*),
+              :global(*:before),
+              :global(*:after) {
                 box-sizing: inherit;
               }
 
@@ -36,6 +36,10 @@ class MyDocument extends Document {
                 font-family: 'Roboto', sans-serif;
                 font-size: ${percent(62.5)};
                 margin: 0;
+              }
+
+              :global(p) {
+                font-size: ${rem(1)};
               }
             `}
           </style>
