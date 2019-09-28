@@ -6,7 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "export": "next export",
-    "format": "prettier --write \"src/**/*.ts\"",
+    "format": "prettier --write \"**/*.tsx\"",
     "start": "next start"
   },
   "dependencies": {

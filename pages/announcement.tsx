@@ -20,5 +20,5 @@ export default class AnnouncementPage extends React.PureComponent {
         <p>This is about Next.js!</p>
       </Layout>
     )
-  }  
+  }
 }

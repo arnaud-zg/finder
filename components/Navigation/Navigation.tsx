@@ -6,56 +6,54 @@ import { ABOUT, ANNOUNCEMENT, HOME } from '../../constants/routes'
 const routes = [
   {
     href: HOME,
-    label: "Home",
+    label: 'Home',
   },
   {
     href: ANNOUNCEMENT,
-    label: "Announcement",
+    label: 'Announcement',
   },
   {
     href: ABOUT,
-    label: "About",
+    label: 'About',
   },
 ]
 
 const className = style({
   textAlign: 'center',
   $nest: {
-    'ul': {
+    ul: {
       display: 'flex',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
     },
     '& > ul': {
-      padding: '4px 16px'
+      padding: '4px 16px',
     },
-    'li': {
+    li: {
       display: 'flex',
-      padding: '6px 8px'
+      padding: '6px 8px',
     },
     a: {
       color: '#067df7',
       textDecoration: 'none',
-      fontSize: '13px'
-    }
-  }
+      fontSize: '13px',
+    },
+  },
 })
 
 export class Navigation extends React.PureComponent {
   render() {
     return (
-     <nav className={className}>
-       <ul>
-       {
-         routes.map(({ href, label }) => (
-          <li key={href}>
-            <Link href={href}>
-              <a>{label}</a>
-            </Link>
-          </li>
-         ))
-       }
-       </ul>
-     </nav> 
+      <nav className={className}>
+        <ul>
+          {routes.map(({ href, label }) => (
+            <li key={href}>
+              <Link href={href}>
+                <a>{label}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     )
   }
 }

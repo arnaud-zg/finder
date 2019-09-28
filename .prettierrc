@@ -2,5 +2,5 @@
   "printWidth": 80,
   "semi": false,
   "singleQuote": true,
-  "trailinComma": "es2017"
+  "trailingComma": "es5"
 }
