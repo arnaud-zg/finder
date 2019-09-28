@@ -40,7 +40,7 @@ const className = style({
     a: {
       color: colors.light.toHexString(),
       textDecoration: 'none',
-      fontSize: '15px',
+      fontSize: `${rem(1)}`,
     },
     'a:hover': {
       color: colors.primary.toHexString(),
