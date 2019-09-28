@@ -1551,7 +1551,7 @@ css@2.2.4:
     source-map-resolve "^0.5.2"
     urix "^0.1.0"
 
-csstype@^2.2.0:
+csstype@^2.2.0, csstype@^2.4.0:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
 
@@ -1909,6 +1909,10 @@ fragment-cache@^0.2.1:
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
   dependencies:
     map-cache "^0.2.2"
+
+free-style@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/free-style/-/free-style-2.6.1.tgz#6af512568291195854842cbbaacd95578a6a9a8b"
 
 fresh@0.5.2:
   version "0.5.2"
@@ -3897,6 +3901,13 @@ typedarray@^0.0.6:
 typescript@^3.6.3:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
+
+typestyle@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/typestyle/-/typestyle-2.0.4.tgz#b8da5feaf8a4f9d1f69066f3cc4659098bd08457"
+  dependencies:
+    csstype "^2.4.0"
+    free-style "2.6.1"
 
 unfetch@4.1.0:
   version "4.1.0"
