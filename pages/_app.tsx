@@ -3,10 +3,8 @@ import App from 'next/app'
 import('../plugins/progress')
 
 export default class MyApp extends App {
-  render () {
+  render() {
     const { Component, pageProps } = this.props
-    return (
-      <Component {...pageProps} />
-    )
+    return <Component {...pageProps} />
   }
 }
