@@ -17,7 +17,7 @@ export default class AboutPage extends React.PureComponent {
         <Head>
           <title>About | Finder</title>
         </Head>
-        <p>This is about Next.js!</p>
+        <p>Content for About page</p>
       </Layout>
     )
   }

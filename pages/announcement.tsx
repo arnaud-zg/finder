@@ -15,9 +15,9 @@ export default class AnnouncementPage extends React.PureComponent {
     return (
       <Layout>
         <Head>
-          <title>Home | Finder</title>
+          <title>Announcement | Finder</title>
         </Head>
-        <p>This is about Next.js!</p>
+        <p>Content for Announcement page</p>
       </Layout>
     )
   }
