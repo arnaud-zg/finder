@@ -19,11 +19,14 @@ const routes = [
 ]
 
 const className = style({
+  backgroundColor: '#333',
+  padding: '8px 0',
   textAlign: 'center',
   $nest: {
     ul: {
       display: 'flex',
       justifyContent: 'space-between',
+      margin: 0,
     },
     '& > ul': {
       padding: '4px 32px',
@@ -33,9 +36,12 @@ const className = style({
       padding: '6px 8px',
     },
     a: {
-      color: '#067df7',
+      color: '#fff',
       textDecoration: 'none',
-      fontSize: '13px',
+      fontSize: '15px',
+    },
+    'a:hover': {
+      color: '#067df7',
     },
   },
 })
