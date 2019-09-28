@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import { style } from 'typestyle'
+import { rem } from 'csx'
 import { ABOUT, ANNOUNCEMENT, HOME } from '../../constants/routes'
+import { colors } from '../../constants/colors'
 
 const routes = [
   {
@@ -19,8 +21,8 @@ const routes = [
 ]
 
 const className = style({
-  backgroundColor: '#333',
-  padding: '8px 0',
+  backgroundColor: colors.dark.toHexString(),
+  padding: `${rem(0.5)} 0`,
   textAlign: 'center',
   $nest: {
     ul: {
@@ -29,19 +31,19 @@ const className = style({
       margin: 0,
     },
     '& > ul': {
-      padding: '4px 32px',
+      padding: `${rem(0.25)} ${rem(1.5)}`,
     },
     li: {
       display: 'flex',
-      padding: '6px 8px',
+      padding: `${rem(0.25)} ${rem(0.25)}`,
     },
     a: {
-      color: '#fff',
+      color: colors.light.toHexString(),
       textDecoration: 'none',
       fontSize: '15px',
     },
     'a:hover': {
-      color: '#067df7',
+      color: colors.primary.toHexString(),
     },
   },
 })

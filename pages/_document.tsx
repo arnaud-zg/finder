@@ -1,4 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document'
+import { percent } from 'csx'
+import { colors } from '../constants/colors'
 
 class MyDocument extends Document {
   render() {
@@ -8,11 +10,12 @@ class MyDocument extends Document {
           <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
           <style jsx>
             {`
+              @import url(/static/Roboto-Regular.ttf);
+
               :global(body) {
-                color: #333;
-                font-family: -apple-system, BlinkMacSystemFont, Avenir Next,
-                  Avenir, Helvetica, sans-serif;
-                font-size: 13px;
+                color: ${colors.dark.toHexString()};
+                font-family: 'Roboto', sans-serif;
+                font-size: ${percent(62.5)};
                 margin: 0;
               }
             `}
