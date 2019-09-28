@@ -7,10 +7,29 @@ class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <meta name="viewport" content="width=device-width" />
           <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
           <style jsx>
             {`
               @import url(/static/Roboto-Regular.ttf);
+
+              html,
+              body {
+                height: 100%;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+              }
+
+              html {
+                box-sizing: border-box;
+              }
+
+              *,
+              *:before,
+              *:after {
+                box-sizing: inherit;
+              }
 
               :global(body) {
                 color: ${colors.dark.toHexString()};
@@ -22,7 +41,9 @@ class MyDocument extends Document {
           </style>
         </Head>
         <body>
-          <Main />
+          <div id="root">
+            <Main />
+          </div>
           <NextScript />
         </body>
       </html>
