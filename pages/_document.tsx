@@ -1,6 +1,7 @@
 import { percent, rem } from 'csx'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { colors } from '../constants/colors'
+import { style } from 'typestyle'
 
 class MyDocument extends Document {
   render() {
@@ -40,6 +41,7 @@ class MyDocument extends Document {
 
               :global(p) {
                 font-size: ${rem(1)};
+                margin: 0;
               }
             `}
           </style>
