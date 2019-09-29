@@ -32,7 +32,7 @@ interface IProps {
 export default class AnnouncementPage extends React.PureComponent<IProps> {
   static async getInitialProps() {
     await new Promise(resolve => {
-      setTimeout(resolve, 500)
+      setTimeout(resolve, 250)
     })
 
     return {
@@ -41,21 +41,29 @@ export default class AnnouncementPage extends React.PureComponent<IProps> {
           list: [
             {
               identifier: '1',
-              name:
-                '€750 Ground floor Studio apartment with Balcony ! (Paris Brochant - Rue des Moines)',
+              locationIndication: 'Paris Brochant - Rue des Moines',
+              name: 'Ground floor Studio apartment with Balcony !',
+              price: 75000,
+              publishTime: '2019-09-29T13:50:42.926Z',
+              type: 'apartment',
               // https://paris.craigslist.org/apa/d/ground-floor-studio-apartment-with/6988874946.html
             },
             {
               identifier: '2',
+              locationIndication: 'Paris',
               name:
-                "Improve your Online Shopify Store with France's Top Shopify Expert - €97 (Paris)",
+                "Improve your Online Shopify Store with France's Top Shopify Expert",
+              price: 9700,
+              publishTime: '2019-09-29T13:50:42.926Z',
+              type: 'learning',
               // https://paris.craigslist.org/syd/d/improve-your-online-shopify-store-with/6986077334.html
             },
-
             {
               identifier: '3',
-              name:
-                'Native English Speaker Seeking Accomodation (Montmartre - Paris)',
+              locationIndication: 'Montmartre - Paris',
+              name: 'Native English Speaker Seeking Accomodation',
+              publishTime: '2019-09-29T13:50:42.926Z',
+              type: 'request',
               // https://paris.craigslist.org/hss/d/native-english-speaker-seeking/6984153650.html
             },
           ],
