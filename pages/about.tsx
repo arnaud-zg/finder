@@ -39,9 +39,11 @@ export default class AboutPage extends React.PureComponent<IProps> {
           <title>About | Finder</title>
         </Head>
 
-        <Card>
-          <Paragraph content={description} />
-        </Card>
+        {!!description && (
+          <Card>
+            <Paragraph content={description} />
+          </Card>
+        )}
       </Layout>
     )
   }
