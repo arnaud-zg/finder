@@ -8,6 +8,7 @@ const className = style({
   border: 'solid',
   borderColor: colors.gray.toHexString(),
   borderWidth: rem(0.0625),
+  borderRadius: rem(0.5),
   marginTop: rem(1),
 })
 
