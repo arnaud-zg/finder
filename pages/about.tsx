@@ -15,7 +15,7 @@ interface IProps {
 export default class AboutPage extends React.PureComponent<IProps> {
   static async getInitialProps() {
     await new Promise(resolve => {
-      setTimeout(resolve, 500)
+      setTimeout(resolve, 250)
     })
 
     return {
