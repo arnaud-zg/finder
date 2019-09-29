@@ -1,17 +1,17 @@
 import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
+import {
+  IProps as IAnnouncementItemProps,
+  AnnouncementItem,
+} from './AnnouncementItem'
 
 const className = style({
   marginTop: rem(1),
 })
 
-interface IAnnouncementItem {
-  [key: string]: any
-}
-
 export interface IProps {
-  list: IAnnouncementItem[]
+  list: IAnnouncementItemProps[]
 }
 
 export class AnnouncementList extends React.PureComponent<IProps> {
@@ -19,8 +19,8 @@ export class AnnouncementList extends React.PureComponent<IProps> {
     const { list } = this.props
     return (
       <div className={className}>
-        {list.map(announcementItem => (
-          <div>{JSON.stringify(announcementItem)}</div>
+        {list.map(item => (
+          <AnnouncementItem key={item.identifier} {...item} />
         ))}
       </div>
     )
