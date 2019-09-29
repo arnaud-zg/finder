@@ -31,7 +31,7 @@ const className = style({
       margin: 0,
     },
     '& > ul': {
-      padding: `${rem(0.25)} ${rem(1.5)}`,
+      padding: `${rem(0.5)} ${rem(2)}`,
     },
     li: {
       display: 'flex',
