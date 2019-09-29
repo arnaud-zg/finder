@@ -38,7 +38,27 @@ export default class AnnouncementPage extends React.PureComponent<IProps> {
     return {
       entities: {
         '123': {
-          list: [{ name: 'A' }, { name: 'B' }, { name: 'C' }],
+          list: [
+            {
+              identifier: '1',
+              name:
+                '€750 Ground floor Studio apartment with Balcony ! (Paris Brochant - Rue des Moines)',
+              // https://paris.craigslist.org/apa/d/ground-floor-studio-apartment-with/6988874946.html
+            },
+            {
+              identifier: '2',
+              name:
+                "Improve your Online Shopify Store with France's Top Shopify Expert - €97 (Paris)",
+              // https://paris.craigslist.org/syd/d/improve-your-online-shopify-store-with/6986077334.html
+            },
+
+            {
+              identifier: '3',
+              name:
+                'Native English Speaker Seeking Accomodation (Montmartre - Paris)',
+              // https://paris.craigslist.org/hss/d/native-english-speaker-seeking/6984153650.html
+            },
+          ],
         },
         '124': {
           mode: 'classic',

@@ -18,7 +18,7 @@ const Home = () => (
     </Head>
 
     <div className={className}>
-      <Title content={`Welcome to ${APP_NAME}!`} />
+      <Title center={true} content={`Welcome to ${APP_NAME}!`} level={1} />
       <Paragraph
         center={true}
         content="Just a simple platform to post announcements."
