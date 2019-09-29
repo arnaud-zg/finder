@@ -30,6 +30,7 @@ class MyDocument extends Document {
               :global(*:before),
               :global(*:after) {
                 box-sizing: inherit;
+                font-size: ${rem(1)};
               }
 
               :global(body) {
