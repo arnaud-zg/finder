@@ -49,6 +49,7 @@ export default class AnnouncementPage extends React.PureComponent<IProps> {
               // https://paris.craigslist.org/apa/d/ground-floor-studio-apartment-with/6988874946.html
             },
             {
+              courseDuration: '2h',
               identifier: '2',
               locationIndication: 'Paris',
               name:

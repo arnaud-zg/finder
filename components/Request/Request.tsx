@@ -1,7 +1,48 @@
+import { inlineBlock, padding } from 'csstips'
+import { rem } from 'csx'
+import { format } from 'date-fns'
 import React from 'react'
+import { style } from 'typestyle'
+import { colors } from '../../constants/colors'
+import { Paragraph } from '../Paragraph'
+import { Title } from '../Title'
 
-export class Request extends React.PureComponent {
+interface IProps {
+  identifier: string
+  locationIndication: string
+  name: string
+  publishTime: string
+}
+
+const tagClassname = style(inlineBlock, padding(rem(0.25)), {
+  backgroundColor: colors.gray.toHexString(),
+  borderRadius: rem(0.25),
+  color: colors.light.toHexString(),
+  $nest: {
+    '&:hover': {
+      backgroundColor: colors.lightGray.toHexString(),
+      color: colors.dark.toHexString(),
+    },
+  },
+})
+
+export class Request extends React.Component<IProps> {
   render() {
-    return null
+    const { identifier, locationIndication, name, publishTime } = this.props
+    return (
+      <div id={identifier}>
+        <Title content={name} level={3} />
+        <div
+          className={style(inlineBlock, {
+            textDecoration: 'underline',
+          })}
+        >
+          <Paragraph content={locationIndication} />
+        </div>
+        <div className={tagClassname}>
+          {format(new Date(publishTime), "dd/MM/yyyy 'at' HH:mm")}
+        </div>
+      </div>
+    )
   }
 }
