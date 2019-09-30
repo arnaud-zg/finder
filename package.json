@@ -7,7 +7,10 @@
     "dev": "next dev",
     "export": "next export",
     "format": "prettier --write \"**/*.tsx\"",
-    "start": "next start"
+    "start": "next start",
+    "test:coverage:report": "yarn run test:coverage && codecov -f coverage/*.json",
+    "test:coverage": "yarn run test --coverage",
+    "test": "jest"
   },
   "dependencies": {
     "date-fns": "^2.4.1",
@@ -18,11 +21,17 @@
     "typestyle": "^2.0.4"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.18",
     "@types/node": "^12.7.8",
-    "@types/react": "^16.9.3",
+    "@types/react": "^16.9.4",
+    "@types/react-test-renderer": "^16.9.0",
+    "codecov": "^3.6.1",
     "csstips": "^1.2.0",
     "csx": "^10.0.0",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2",
+    "react-test-renderer": "^16.10.1",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
   }
 }

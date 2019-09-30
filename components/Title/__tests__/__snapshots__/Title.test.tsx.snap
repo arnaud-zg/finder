@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title renders correctly with property level 1 1`] = `
+<h1
+  className="f1bbqrhw"
+>
+  Hello World
+</h1>
+`;
+
+exports[`Title renders correctly with property level 2 1`] = `
+<h2
+  className="fgbfogg"
+>
+  Hello World
+</h2>
+`;
+
+exports[`Title renders correctly with property level 3 1`] = `
+<h3
+  className="fal0ymj"
+>
+  Hello World
+</h3>
+`;
