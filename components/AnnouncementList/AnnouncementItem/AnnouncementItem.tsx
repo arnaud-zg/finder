@@ -1,6 +1,7 @@
-import { rem } from 'csx'
+import { em, rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
+import { colors } from '../../../constants/colors'
 import { Apartment } from '../../Apartment'
 import { Learning } from '../../Learning'
 import { Request } from '../../Request'
@@ -11,6 +12,7 @@ const className = style({
 })
 
 export interface IProps {
+  courseDuration: string
   identifier: string
   locationIndication: string
   name: string
@@ -22,6 +24,7 @@ export interface IProps {
 export class AnnouncementItem extends React.PureComponent<IProps> {
   render() {
     const {
+      courseDuration,
       identifier,
       locationIndication,
       name,
@@ -30,7 +33,15 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
       type,
     } = this.props
     return (
-      <div className={className}>
+      <div
+        className={`${className} ${style({
+          borderColor: colors[type]
+            ? colors[type].toHexString()
+            : colors.dark.toHexString(),
+          borderLeftStyle: 'solid',
+          borderWidth: em(0.5),
+        })}`}
+      >
         {type === 'apartment' && (
           <Apartment
             identifier={identifier}
@@ -40,8 +51,24 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
             publishTime={publishTime}
           />
         )}
-        {type === 'learning' && <Learning {...this.props} />}
-        {type === 'request' && <Request {...this.props} />}
+        {type === 'learning' && (
+          <Learning
+            courseDuration={courseDuration}
+            identifier={identifier}
+            locationIndication={locationIndication}
+            name={name}
+            price={price}
+            publishTime={publishTime}
+          />
+        )}
+        {type === 'request' && (
+          <Request
+            identifier={identifier}
+            locationIndication={locationIndication}
+            name={name}
+            publishTime={publishTime}
+          />
+        )}
       </div>
     )
   }
