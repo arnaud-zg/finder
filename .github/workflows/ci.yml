@@ -24,6 +24,6 @@ jobs:
           yarn run --if-present build
       - name: Unit test
         run: |
-          yarn run test
+          yarn run test:coverage:report
         env:
           CI: true
