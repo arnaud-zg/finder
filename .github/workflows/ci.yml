@@ -23,9 +23,8 @@ jobs:
         run: |
           yarn run --if-present build
       - name: Unit test
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
           yarn run test:coverage:report
         env:
           CI: true
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
