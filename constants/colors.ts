@@ -1,6 +1,7 @@
 import { color } from 'csx'
 
 const dark = color('#333333')
+const error = color('#f44336')
 const gray = color('#888888')
 const light = color('#FFFFFF')
 const lightGray = color('#fafbfc')
@@ -13,6 +14,7 @@ const request = color('#00bcd4')
 export const colors = {
   apartment,
   dark,
+  error,
   gray,
   learning,
   light,
