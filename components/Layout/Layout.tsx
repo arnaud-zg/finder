@@ -7,13 +7,36 @@ const className = style({
   padding: `0 ${rem(1.5)}`,
 })
 
-export class Layout extends React.PureComponent {
+interface IState {
+  isDomRendered: boolean
+}
+
+export class Layout extends React.PureComponent<{}, IState> {
+  public state = {
+    isDomRendered: false,
+  }
+
+  componentDidMount() {
+    this.setState({
+      isDomRendered: true,
+    })
+  }
+
   render() {
     const { children } = this.props
+    const { isDomRendered } = this.state
     return (
       <>
-        <Navigation />
-        <div className={className}>{children}</div>
+        {isDomRendered ? (
+          <>
+            <Navigation />
+            <div className={className}>{children}</div>
+          </>
+        ) : (
+          <div id="loading">
+            <img src="/static/loading.gif" />
+          </div>
+        )}
       </>
     )
   }
