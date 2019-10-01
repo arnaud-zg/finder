@@ -9,6 +9,8 @@ class MyDocument extends Document {
       <html>
         <Head>
           <meta name="viewport" content="width=device-width" />
+          <link rel="stylesheet" type="text/css" href="/static/reset.css" />
+          <link rel="stylesheet" type="text/css" href="/static/main.css" />
           <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
           <style jsx>
             {`
@@ -31,17 +33,13 @@ class MyDocument extends Document {
               :global(*:after) {
                 box-sizing: inherit;
                 font-size: ${rem(1)};
+                border-width: 0;
               }
 
               :global(body) {
                 color: ${colors.dark.toHexString()};
                 font-family: 'Roboto', sans-serif;
                 font-size: ${percent(62.5)};
-                margin: 0;
-              }
-
-              :global(p) {
-                font-size: ${rem(1)};
                 margin: 0;
               }
             `}
