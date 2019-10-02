@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph renders correctly 1`] = `
+<p
+  className="f2qtt8h"
+>
+  Hello World
+</p>
+`;
+
+exports[`Paragraph renders correctly with center props 1`] = `
+<p
+  className="f2qtt8h f1jc9aff"
+>
+  Hello World
+</p>
+`;
