@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Apartment renders correctly 1`] = `
+<div
+  id="1"
+>
+  <h3
+    className="fhwo3dt"
+  >
+    Ground floor Studio apartment with Balcony !
+  </h3>
+  <div
+    className="f4lw1zx"
+  >
+    <p
+      className="f2qtt8h"
+    >
+      Paris
+    </p>
+  </div>
+  <div
+    className="f12o3wr"
+  >
+    750
+     €
+  </div>
+  <div
+    className="f12o3wr f1n0dvv8"
+  >
+    29/09/2019 at 15:50
+  </div>
+</div>
+`;
