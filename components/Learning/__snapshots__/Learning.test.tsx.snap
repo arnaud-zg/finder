@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Learning renders correctly 1`] = `
+<div
+  id="2"
+>
+  <h3
+    className="fhwo3dt"
+  >
+    Improve your Online Shopify Store with France's Top Shopify Expert
+  </h3>
+  <div
+    className="f4lw1zx"
+  >
+    <p
+      className="f2qtt8h"
+    >
+      Paris
+    </p>
+  </div>
+  <div
+    className="f12o3wr"
+  >
+    2h
+  </div>
+  <div
+    className="f12o3wr f1n0dvv8"
+  >
+    97
+     €
+  </div>
+  <div
+    className="f12o3wr f1n0dvv8"
+  >
+    29/09/2019 at 15:50
+  </div>
+</div>
+`;
