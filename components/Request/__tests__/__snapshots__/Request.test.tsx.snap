@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Request renders correctly 1`] = `
+<div
+  id="3"
+>
+  <h3
+    className="fhwo3dt"
+  >
+    Native English Speaker Seeking Accomodation
+  </h3>
+  <div
+    className="f4lw1zx"
+  >
+    <p
+      className="f2qtt8h"
+    >
+      Montmartre - Paris
+    </p>
+  </div>
+  <div
+    className="f12o3wr"
+  >
+    29/09/2019 at 13:50
+  </div>
+</div>
+`;

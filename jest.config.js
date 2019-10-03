@@ -5,6 +5,7 @@ module.exports = {
       tsConfig: 'tsconfig.test.json',
     },
   },
+  globalSetup: './jest.setup.js',
   preset: 'ts-jest',
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
 }
