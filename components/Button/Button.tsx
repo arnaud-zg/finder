@@ -4,6 +4,8 @@ import { style } from 'typestyle'
 import { colors } from '../../constants/colors'
 
 const className = style({
+  border: 0,
+  padding: rem(0.5),
   backgroundColor: colors.gray.toHexString(),
   borderRadius: rem(0.25),
   color: colors.light.toHexString(),
