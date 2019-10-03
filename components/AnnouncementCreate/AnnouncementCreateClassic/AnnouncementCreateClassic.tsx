@@ -7,6 +7,7 @@ import { Button } from '../../Button'
 import { TextInput } from '../../TextInput'
 import { Title } from '../../Title'
 import { IFormSchema } from '../AnnouncementCreate'
+import { TextArea } from '../../TextArea'
 
 const className = style({})
 
@@ -38,14 +39,33 @@ export class AnnouncementCreateClassic extends React.PureComponent<IProps> {
           onSubmit={values => onSubmit(values)}
           render={(props: FormikProps<FormikValues>) => (
             <form onSubmit={props.handleSubmit}>
-              {fieldNames.map(fieldName => (
-                <TextInput
-                  {...formSchema.properties[fieldName]}
-                  key={fieldName}
-                  placeholder={FORM_INPUT_FIELD_PLACEHOLDER_MAPPING[fieldName]}
-                  name={fieldName}
-                />
-              ))}
+              {fieldNames.map(fieldName => {
+                const { type, maxLength } = formSchema.properties[fieldName]
+
+                if (type === 'string' && maxLength > 50) {
+                  return (
+                    <TextArea
+                      {...formSchema.properties[fieldName]}
+                      key={fieldName}
+                      placeholder={
+                        FORM_INPUT_FIELD_PLACEHOLDER_MAPPING[fieldName]
+                      }
+                      name={fieldName}
+                    />
+                  )
+                }
+
+                return (
+                  <TextInput
+                    {...formSchema.properties[fieldName]}
+                    key={fieldName}
+                    placeholder={
+                      FORM_INPUT_FIELD_PLACEHOLDER_MAPPING[fieldName]
+                    }
+                    name={fieldName}
+                  />
+                )
+              })}
               <div className={ctaClassName}>
                 <Button>Submit</Button>
               </div>
