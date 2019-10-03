@@ -2,7 +2,7 @@ export const payload = {
   formSchemas: [
     {
       type: 'classic',
-      required: ['name', 'location'],
+      required: ['name', 'description'],
       properties: {
         name: {
           type: 'string',
@@ -11,6 +11,10 @@ export const payload = {
         location: {
           type: 'string',
           maxLength: 25,
+        },
+        description: {
+          type: 'string',
+          maxLength: 280,
         },
       },
     },

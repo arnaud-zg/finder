@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea renders correctly 1`] = `
+<textarea
+  className="f1tnlile"
+  name="description"
+  onBlur={[Function]}
+  onChange={[Function]}
+  value=""
+/>
+`;
