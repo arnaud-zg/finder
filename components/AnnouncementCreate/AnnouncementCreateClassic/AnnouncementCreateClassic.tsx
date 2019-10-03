@@ -4,10 +4,11 @@ import { style } from 'typestyle'
 import { FORM_INPUT_FIELD_PLACEHOLDER_MAPPING } from '../../../constants/form'
 import { getFormFieldNames, getFormInitialValues } from '../../../utils/form'
 import { Button } from '../../Button'
+import { Select } from '../../Select'
+import { TextArea } from '../../TextArea'
 import { TextInput } from '../../TextInput'
 import { Title } from '../../Title'
 import { IFormSchema } from '../AnnouncementCreate'
-import { TextArea } from '../../TextArea'
 
 const className = style({})
 
@@ -40,7 +41,22 @@ export class AnnouncementCreateClassic extends React.PureComponent<IProps> {
           render={(props: FormikProps<FormikValues>) => (
             <form onSubmit={props.handleSubmit}>
               {fieldNames.map(fieldName => {
-                const { type, maxLength } = formSchema.properties[fieldName]
+                const { type, maxLength, enums } = formSchema.properties[
+                  fieldName
+                ]
+
+                if (type === 'string' && enums) {
+                  return (
+                    <Select
+                      name={fieldName}
+                      options={enums.map(optionValue => (
+                        <option key={optionValue} value={optionValue}>
+                          {optionValue}
+                        </option>
+                      ))}
+                    />
+                  )
+                }
 
                 if (type === 'string' && maxLength > 50) {
                   return (
