@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput renders correctly 1`] = `
+<select
+  className="f1sexekj"
+  name="mode"
+  onBlur={[Function]}
+  onChange={[Function]}
+  value=""
+>
+  <option
+    value="Level 1"
+  />
+  <option
+    value="Level 2"
+  />
+  <option
+    value="Level 3"
+  />
+  <option
+    value="Boss"
+  />
+</select>
+`;

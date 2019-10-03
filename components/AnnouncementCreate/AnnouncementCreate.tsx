@@ -13,6 +13,7 @@ export interface IFormSchema {
 interface IFormSchemaProperty {
   [fieldName: string]: {
     type: string
+    enums?: string[]
     minLength?: number
     maxLength?: number
   }

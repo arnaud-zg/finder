@@ -16,6 +16,10 @@ export const payload = {
           type: 'string',
           maxLength: 280,
         },
+        visibility: {
+          type: 'string',
+          enums: ['public', 'private'],
+        },
       },
     },
   ],
