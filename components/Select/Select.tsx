@@ -7,9 +7,14 @@ import { colors } from '../../constants/colors'
 const className = style({
   backgroundColor: colors.light.toHexString(),
   border: 0,
+  borderColor: colors.gray.toHexString(),
+  borderRadius: rem(0.25),
+  borderStyle: 'solid',
+  borderWidth: rem(0.0625),
   color: colors.gray.toHexString(),
   fontSize: rem(1),
-  marginTop: rem(1),
+  marginTop: rem(0.5),
+  padding: rem(0.25),
 })
 
 interface IProps extends React.HTMLProps<HTMLSelectElement> {

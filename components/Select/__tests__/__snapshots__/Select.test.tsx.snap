@@ -2,7 +2,7 @@
 
 exports[`TextInput renders correctly 1`] = `
 <select
-  className="f1sexekj"
+  className="foacnk6"
   name="mode"
   onBlur={[Function]}
   onChange={[Function]}
