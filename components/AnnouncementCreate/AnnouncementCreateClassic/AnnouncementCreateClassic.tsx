@@ -2,7 +2,11 @@ import { Formik, FormikProps, FormikValues } from 'formik'
 import React from 'react'
 import { style } from 'typestyle'
 import { FORM_INPUT_FIELD_PLACEHOLDER_MAPPING } from '../../../constants/form'
-import { getFormFieldNames, getFormInitialValues } from '../../../utils/form'
+import {
+  getFormFieldNames,
+  getFormInitialValues,
+  getFormValidationSchema,
+} from '../../../utils/form'
 import { Button } from '../../Button'
 import { Select } from '../../Select'
 import { TextArea } from '../../TextArea'
@@ -31,12 +35,14 @@ export class AnnouncementCreateClassic extends React.PureComponent<IProps> {
     const { formSchema, onSubmit } = this.props
     const fieldNames = getFormFieldNames(formSchema)
     const formInitialValues = getFormInitialValues(formSchema)
+    const validationSchema = getFormValidationSchema(formSchema)
 
     return (
       <div className={className}>
         <Title content="Classic" level={2} />
         <Formik
           initialValues={formInitialValues}
+          validationSchema={validationSchema}
           onSubmit={values => onSubmit(values)}
           render={(props: FormikProps<FormikValues>) => (
             <form onSubmit={props.handleSubmit}>
