@@ -11,12 +11,14 @@ export interface IFormSchema {
 }
 
 interface IFormSchemaProperty {
-  [fieldName: string]: {
-    type: string
-    enums?: string[]
-    minLength?: number
-    maxLength?: number
-  }
+  [fieldName: string]: IFormSchemaField
+}
+
+export interface IFormSchemaField {
+  type: string
+  enums?: string[]
+  minLength?: number
+  maxLength?: number
 }
 
 const className = style({
