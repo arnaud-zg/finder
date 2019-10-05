@@ -8,7 +8,7 @@ describe('Apartment', () => {
       <Apartment
         identifier="1"
         locationIndication="Paris"
-        name="Ground floor Studio apartment with Balcony !"
+        description="Ground floor Studio apartment with Balcony !"
         price={75000}
         publishTime="2019-09-29T13:50:42.926Z"
       />

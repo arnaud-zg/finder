@@ -8,9 +8,9 @@ import { Paragraph } from '../Paragraph'
 import { Title } from '../Title'
 
 interface IProps {
+  description: string
   identifier: string
   locationIndication: string
-  name: string
   price: number
   publishTime: string
 }
@@ -19,6 +19,7 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
   backgroundColor: colors.gray.toHexString(),
   borderRadius: rem(0.25),
   color: colors.light.toHexString(),
+  marginLeft: rem(0.25),
   $nest: {
     '&:hover': {
       backgroundColor: colors.lightGray.toHexString(),
@@ -27,31 +28,29 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
   },
 })
 
+const locationIndicationClassName = style(inlineBlock, {
+  textDecoration: 'underline',
+})
+
 export class Apartment extends React.PureComponent<IProps> {
   render() {
     const {
+      description,
       identifier,
       locationIndication,
-      name,
       price,
       publishTime,
     } = this.props
     return (
       <div id={identifier}>
-        <Title content={name} level={3} />
-        <div
-          className={style(inlineBlock, {
-            textDecoration: 'underline',
-          })}
-        >
-          <Paragraph content={locationIndication} />
-        </div>
-        <div className={tagClassname}>{price / 100} €</div>
-        <div
-          className={`${tagClassname} ${style({
-            marginLeft: rem(0.25),
-          })}`}
-        >
+        <Title content={description} level={3} />
+        {!!locationIndication && (
+          <div className={locationIndicationClassName}>
+            <Paragraph content={locationIndication} />
+          </div>
+        )}
+        {!!price && <div className={tagClassname}>{price / 100} €</div>}
+        <div className={tagClassname}>
           {format(new Date(publishTime), "dd/MM/yyyy 'at' HH:mm")}
         </div>
       </div>

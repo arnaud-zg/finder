@@ -8,7 +8,7 @@ describe('Request', () => {
       <Request
         identifier="3"
         locationIndication="Montmartre - Paris"
-        name="Native English Speaker Seeking Accomodation"
+        description="Native English Speaker Seeking Accomodation"
         publishTime="2019-09-29T13:50:42.926Z"
       />
     )
