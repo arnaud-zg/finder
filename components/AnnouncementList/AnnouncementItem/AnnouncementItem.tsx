@@ -45,9 +45,9 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
       >
         {type === 'apartment' && (
           <Apartment
+            description={description}
             identifier={identifier}
             locationIndication={locationIndication}
-            description={description}
             price={price}
             publishTime={publishTime}
           />
@@ -55,18 +55,18 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
         {type === 'learning' && (
           <Learning
             courseDuration={courseDuration}
+            description={description}
             identifier={identifier}
             locationIndication={locationIndication}
-            description={description}
             price={price}
             publishTime={publishTime}
           />
         )}
         {type === 'request' && (
           <Request
+            description={description}
             identifier={identifier}
             locationIndication={locationIndication}
-            description={description}
             publishTime={publishTime}
           />
         )}
