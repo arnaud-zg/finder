@@ -13,10 +13,10 @@ describe('TextInput', () => {
           <Select
             name="mode"
             options={[
-              <option value="Level 1" />,
-              <option value="Level 2" />,
-              <option value="Level 3" />,
-              <option value="Boss" />,
+              <option key="1" value="Level 1" />,
+              <option key="2" value="Level 2" />,
+              <option key="3" value="Level 3" />,
+              <option key="4" value="Boss" />,
             ]}
           />
         )}
