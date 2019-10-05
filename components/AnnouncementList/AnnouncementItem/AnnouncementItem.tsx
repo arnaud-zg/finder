@@ -57,7 +57,6 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
             courseDuration={courseDuration}
             description={description}
             identifier={identifier}
-            locationIndication={locationIndication}
             price={price}
             publishTime={publishTime}
           />

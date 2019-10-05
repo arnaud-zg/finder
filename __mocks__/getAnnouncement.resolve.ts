@@ -41,7 +41,6 @@ export const payload = {
         {
           courseDuration: '2h',
           identifier: '2',
-          locationIndication: 'Paris',
           description:
             "Improve your Online Shopify Store with France's Top Shopify Expert",
           price: 9700,
