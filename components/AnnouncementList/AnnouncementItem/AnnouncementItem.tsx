@@ -13,13 +13,13 @@ const className = style({
 
 export interface IProps {
   courseDuration?: string
+  description: string
   identifier: string
   locationIndication: string
-  description: string
   price: number
   publishTime: string
-  type: 'apartment' | 'learning' | 'request'
-  visibility: 'public' | 'private'
+  type: AnnouncementType
+  visibility: AnnouncementVisiblity
 }
 
 export class AnnouncementItem extends React.PureComponent<IProps> {

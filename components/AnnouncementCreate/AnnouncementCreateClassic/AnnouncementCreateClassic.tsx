@@ -13,6 +13,7 @@ import { TextArea } from '../../TextArea'
 import { TextInput } from '../../TextInput'
 import { Title } from '../../Title'
 import { IFormSchema } from '../AnnouncementCreate'
+import { NumberInput } from '../../NumberInput'
 
 const className = style({})
 
@@ -43,7 +44,7 @@ export class AnnouncementCreateClassic extends React.PureComponent<IProps> {
         <Formik
           initialValues={formInitialValues}
           validationSchema={validationSchema}
-          onSubmit={values => onSubmit(values)}
+          onSubmit={onSubmit}
           render={(props: FormikProps<FormikValues>) => (
             <form onSubmit={props.handleSubmit}>
               {fieldNames.map(fieldName => {
@@ -51,9 +52,23 @@ export class AnnouncementCreateClassic extends React.PureComponent<IProps> {
                   fieldName
                 ]
 
+                if (type === 'number') {
+                  return (
+                    <NumberInput
+                      {...formSchema.properties[fieldName]}
+                      key={fieldName}
+                      placeholder={
+                        FORM_INPUT_FIELD_PLACEHOLDER_MAPPING[fieldName]
+                      }
+                      name={fieldName}
+                    />
+                  )
+                }
+
                 if (type === 'string' && enums) {
                   return (
                     <Select
+                      key={fieldName}
                       name={fieldName}
                       options={enums.map(optionValue => (
                         <option key={optionValue} value={optionValue}>

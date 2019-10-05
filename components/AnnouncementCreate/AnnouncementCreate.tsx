@@ -2,8 +2,10 @@ import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
 import { Title } from '../Title'
-import { AnnouncementCreateClassic } from './AnnouncementCreateClassic'
-import { IFormData } from './AnnouncementCreateClassic'
+import {
+  AnnouncementCreateClassic,
+  IFormData,
+} from './AnnouncementCreateClassic'
 
 export interface IFormSchema {
   type: 'classic' | 'express'
@@ -34,15 +36,13 @@ export interface IProps {
 
 export class AnnouncementCreate extends React.PureComponent<IProps> {
   render() {
-    const { formSchema, mode } = this.props
+    const { formSchema, mode, onSubmit } = this.props
     return (
       <div className={className}>
         {mode === 'classic' && (
           <AnnouncementCreateClassic
             formSchema={formSchema}
-            onSubmit={formData => {
-              console.log(formData)
-            }}
+            onSubmit={onSubmit}
           />
         )}
         {mode === 'express' && <Title content="Express" level={3} />}
