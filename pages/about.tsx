@@ -3,6 +3,7 @@ import React from 'react'
 import { Layout } from '../components/Layout'
 import { Card } from '../components/Card'
 import { Paragraph } from '../components/Paragraph'
+import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 
 interface IProps {
   page: {
@@ -15,7 +16,7 @@ interface IProps {
 export default class AboutPage extends React.PureComponent<IProps> {
   static async getInitialProps() {
     await new Promise(resolve => {
-      setTimeout(resolve, 250)
+      setTimeout(resolve, RESPONSE_DURATION_IN_MS)
     })
 
     return {

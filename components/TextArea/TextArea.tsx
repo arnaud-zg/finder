@@ -27,12 +27,7 @@ export class TextArea extends React.PureComponent<IProps> {
       <Field name={this.props.name}>
         {({ field }) => (
           <>
-            <textarea
-              {...field}
-              {...this.props}
-              className={className}
-              maxlength={this.props.maxLength}
-            />
+            <textarea {...field} {...this.props} className={className} />
             <ErrorField fieldName={field.name} />
           </>
         )}
