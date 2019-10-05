@@ -13,6 +13,7 @@ const className = style({
   borderWidth: rem(0.0625),
   color: colors.gray.toHexString(),
   fontSize: rem(1),
+  marginLeft: rem(0.25),
   marginTop: rem(0.5),
   padding: rem(0.25),
 })
