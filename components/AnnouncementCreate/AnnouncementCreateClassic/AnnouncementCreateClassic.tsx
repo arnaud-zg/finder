@@ -21,7 +21,7 @@ const ctaClassName = style({
   justifyContent: 'center',
 })
 
-interface IFormData {
+export interface IFormData {
   [fieldName: string]: string
 }
 
