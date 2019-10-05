@@ -11,7 +11,6 @@ interface IProps {
   courseDuration: string
   description: string
   identifier: string
-  locationIndication: string
   price: number
   publishTime: string
 }
@@ -29,28 +28,18 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
   },
 })
 
-const locationIndicationClassName = style(inlineBlock, {
-  textDecoration: 'underline',
-})
-
 export class Learning extends React.Component<IProps> {
   render() {
     const {
       courseDuration,
       description,
       identifier,
-      locationIndication,
       price,
       publishTime,
     } = this.props
     return (
       <div id={identifier}>
         <Title content={description} level={3} />
-        {!!locationIndication && (
-          <div className={locationIndicationClassName}>
-            <Paragraph content={locationIndication} />
-          </div>
-        )}
         {!!courseDuration && (
           <div className={tagClassname}>{courseDuration}</div>
         )}
