@@ -8,9 +8,9 @@ import { Paragraph } from '../Paragraph'
 import { Title } from '../Title'
 
 interface IProps {
+  description: string
   identifier: string
   locationIndication: string
-  name: string
   price: number
   publishTime: string
 }
@@ -30,15 +30,15 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
 export class Apartment extends React.PureComponent<IProps> {
   render() {
     const {
+      description,
       identifier,
       locationIndication,
-      name,
       price,
       publishTime,
     } = this.props
     return (
       <div id={identifier}>
-        <Title content={name} level={3} />
+        <Title content={description} level={3} />
         <div
           className={style(inlineBlock, {
             textDecoration: 'underline',

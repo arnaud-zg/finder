@@ -1,0 +1,1 @@
+export const RESPONSE_DURATION_IN_MS = 250
