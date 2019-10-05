@@ -3,6 +3,7 @@ import React from 'react'
 import { style } from 'typestyle'
 import { Title } from '../Title'
 import { AnnouncementCreateClassic } from './AnnouncementCreateClassic'
+import { IFormData } from './AnnouncementCreateClassic'
 
 export interface IFormSchema {
   type: 'classic' | 'express'
@@ -28,6 +29,7 @@ const className = style({
 export interface IProps {
   formSchema: IFormSchema
   mode: 'classic' | 'express'
+  onSubmit: (formData: IFormData) => void
 }
 
 export class AnnouncementCreate extends React.PureComponent<IProps> {
