@@ -2,23 +2,26 @@ export const payload = {
   formSchemas: [
     {
       type: 'classic',
-      required: ['name', 'description'],
+      required: ['description'],
       properties: {
-        name: {
+        description: {
           type: 'string',
-          maxLength: 50,
+          maxLength: 280,
         },
         location: {
           type: 'string',
           maxLength: 25,
         },
-        description: {
-          type: 'string',
-          maxLength: 280,
+        price: {
+          type: 'number',
         },
         visibility: {
           type: 'string',
           enums: ['public', 'private'],
+        },
+        type: {
+          type: 'string',
+          enums: ['apartment', 'learning', 'request'],
         },
       },
     },
@@ -29,7 +32,7 @@ export const payload = {
         {
           identifier: '1',
           locationIndication: 'Paris Brochant - Rue des Moines',
-          name: 'Ground floor Studio apartment with Balcony !',
+          description: 'Ground floor Studio apartment with Balcony !',
           price: 75000,
           publishTime: '2019-09-29T13:50:42.926Z',
           type: 'apartment',
@@ -39,7 +42,7 @@ export const payload = {
           courseDuration: '2h',
           identifier: '2',
           locationIndication: 'Paris',
-          name:
+          description:
             "Improve your Online Shopify Store with France's Top Shopify Expert",
           price: 9700,
           publishTime: '2019-09-29T13:50:42.926Z',
@@ -49,7 +52,7 @@ export const payload = {
         {
           identifier: '3',
           locationIndication: 'Montmartre - Paris',
-          name: 'Native English Speaker Seeking Accomodation',
+          description: 'Native English Speaker Seeking Accomodation',
           publishTime: '2019-09-29T13:50:42.926Z',
           type: 'request',
           // https://paris.craigslist.org/hss/d/native-english-speaker-seeking/6984153650.html
