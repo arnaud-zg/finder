@@ -6,9 +6,9 @@ describe('Request', () => {
   it('renders correctly', () => {
     const testRenderer = renderer.create(
       <Request
+        description="Native English Speaker Seeking Accomodation"
         identifier="3"
         locationIndication="Montmartre - Paris"
-        description="Native English Speaker Seeking Accomodation"
         publishTime="2019-09-29T13:50:42.926Z"
       />
     )
