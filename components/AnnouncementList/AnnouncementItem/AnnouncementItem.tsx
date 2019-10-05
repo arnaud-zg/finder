@@ -12,22 +12,23 @@ const className = style({
 })
 
 export interface IProps {
-  courseDuration: string
+  courseDuration?: string
   identifier: string
   locationIndication: string
-  name: string
+  description: string
   price: number
   publishTime: string
   type: 'apartment' | 'learning' | 'request'
+  visibility: 'public' | 'private'
 }
 
 export class AnnouncementItem extends React.PureComponent<IProps> {
   render() {
     const {
       courseDuration,
+      description,
       identifier,
       locationIndication,
-      name,
       price,
       publishTime,
       type,
@@ -44,9 +45,9 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
       >
         {type === 'apartment' && (
           <Apartment
+            description={description}
             identifier={identifier}
             locationIndication={locationIndication}
-            name={name}
             price={price}
             publishTime={publishTime}
           />
@@ -54,18 +55,18 @@ export class AnnouncementItem extends React.PureComponent<IProps> {
         {type === 'learning' && (
           <Learning
             courseDuration={courseDuration}
+            description={description}
             identifier={identifier}
             locationIndication={locationIndication}
-            name={name}
             price={price}
             publishTime={publishTime}
           />
         )}
         {type === 'request' && (
           <Request
+            description={description}
             identifier={identifier}
             locationIndication={locationIndication}
-            name={name}
             publishTime={publishTime}
           />
         )}
