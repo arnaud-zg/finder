@@ -5,13 +5,21 @@ export const getFormFieldNames = (formSchema: IFormSchema) =>
   Object.keys(formSchema.properties)
 
 export const getFormInitialValues = (formSchema: IFormSchema) =>
-  getFormFieldNames(formSchema).reduce(
-    (acc, fieldName) => ({
-      [fieldName]: '',
+  getFormFieldNames(formSchema).reduce((acc, fieldName) => {
+    let fieldValue = ''
+
+    if (
+      formSchema.properties[fieldName].enums &&
+      formSchema.properties[fieldName].enums.length
+    ) {
+      fieldValue = formSchema.properties[fieldName].enums[0]
+    }
+
+    return {
+      [fieldName]: fieldValue,
       ...acc,
-    }),
-    {}
-  )
+    }
+  }, {})
 
 export const getFormValidationSchema = (formSchema: IFormSchema) => {
   const { required: requiredFields } = formSchema
