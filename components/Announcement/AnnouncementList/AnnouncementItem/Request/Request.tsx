@@ -23,14 +23,14 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
 const locationIndicationClassName = style(inlineBlock, {
   textDecoration: 'underline',
 })
-interface IProps {
+interface IRequestProps {
   description: string
   identifier: string
   locationIndication: string
   publishTime: string
 }
 
-export const Request = (props: IProps) => {
+export const Request = (props: IRequestProps) => {
   const { description, identifier, locationIndication, publishTime } = props
   return (
     <div id={identifier}>

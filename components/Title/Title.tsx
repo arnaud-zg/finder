@@ -33,13 +33,13 @@ const classNameTitleLevel3 = style({
   width: percent(100),
 })
 
-interface IProps {
+interface ITitleProps {
   center?: boolean
   content: string
   level: number
 }
 
-export const Title = (props: IProps) => {
+export const Title = (props: ITitleProps) => {
   const { center, content, level } = props
 
   switch (level) {

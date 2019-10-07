@@ -24,7 +24,7 @@ const locationIndicationClassName = style(inlineBlock, {
   textDecoration: 'underline',
 })
 
-interface IProps {
+interface IApartmentProps {
   description: string
   identifier: string
   locationIndication: string
@@ -32,7 +32,7 @@ interface IProps {
   publishTime: string
 }
 
-export const Apartment = (props: IProps) => {
+export const Apartment = (props: IApartmentProps) => {
   const {
     description,
     identifier,

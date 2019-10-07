@@ -18,7 +18,7 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
     },
   },
 })
-interface IProps {
+interface ILearningProps {
   courseDuration: string
   description: string
   identifier: string
@@ -26,7 +26,7 @@ interface IProps {
   publishTime: string
 }
 
-export const Learning = (props: IProps) => {
+export const Learning = (props: ILearningProps) => {
   const { courseDuration, description, identifier, price, publishTime } = props
   return (
     <div id={identifier}>
