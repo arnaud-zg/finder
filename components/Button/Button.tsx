@@ -22,13 +22,11 @@ const className = style({
 
 interface IProps extends React.HTMLProps<HTMLButtonElement> {}
 
-export class Button extends React.PureComponent<IProps> {
-  render() {
-    const { children } = this.props
-    return (
-      <button className={className} type="submit">
-        {children}
-      </button>
-    )
-  }
+export const Button = (props: IProps) => {
+  const { children } = props
+  return (
+    <button className={className} type="submit">
+      {children}
+    </button>
+  )
 }

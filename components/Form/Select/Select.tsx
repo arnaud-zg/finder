@@ -22,13 +22,11 @@ interface IProps extends React.HTMLProps<HTMLSelectElement> {
   options: JSX.Element[]
 }
 
-export class Select extends React.PureComponent<IProps> {
-  render() {
-    const { options } = this.props
-    return (
-      <Field component="select" name={this.props.name} className={className}>
-        {options}
-      </Field>
-    )
-  }
+export const Select = (props: IProps) => {
+  const { options } = props
+  return (
+    <Field component="select" name={props.name} className={className}>
+      {options}
+    </Field>
+  )
 }

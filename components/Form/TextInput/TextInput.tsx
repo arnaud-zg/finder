@@ -20,22 +20,18 @@ const className = style({
 
 interface IProps extends React.HTMLProps<HTMLInputElement> {}
 
-export class TextInput extends React.PureComponent<IProps> {
-  render() {
-    return (
-      <Field name={this.props.name}>
-        {({ field }) => (
-          <>
-            <input
-              {...field}
-              {...this.props}
-              className={className}
-              type={INPUT_TYPE_TEXT}
-            />
-            <ErrorField fieldName={field.name} />
-          </>
-        )}
-      </Field>
-    )
-  }
-}
+export const TextInput = (props: IProps) => (
+  <Field name={props.name}>
+    {({ field }) => (
+      <>
+        <input
+          {...field}
+          {...props}
+          className={className}
+          type={INPUT_TYPE_TEXT}
+        />
+        <ErrorField fieldName={field.name} />
+      </>
+    )}
+  </Field>
+)

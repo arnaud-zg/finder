@@ -39,44 +39,42 @@ interface IProps {
   level: number
 }
 
-export class Title extends React.Component<IProps> {
-  render() {
-    const { center, content, level } = this.props
+export const Title = (props: IProps) => {
+  const { center, content, level } = props
 
-    switch (level) {
-      case 1:
-        return (
-          <h1
-            className={`${classNameTitleLevel1}${
-              center ? ` ${style(centerCenter)}` : ''
-            }`}
-          >
-            {content}
-          </h1>
-        )
-      case 2:
-        return (
-          <h2
-            className={`${classNameTitleLevel2}${
-              center ? ` ${style(centerCenter)}` : ''
-            }`}
-          >
-            {content}
-          </h2>
-        )
-      case 3:
-        return (
-          <h3
-            className={`${classNameTitleLevel3}${
-              center ? ` ${style(centerCenter)}` : ''
-            }`}
-          >
-            {content}
-          </h3>
-        )
+  switch (level) {
+    case 1:
+      return (
+        <h1
+          className={`${classNameTitleLevel1}${
+            center ? ` ${style(centerCenter)}` : ''
+          }`}
+        >
+          {content}
+        </h1>
+      )
+    case 2:
+      return (
+        <h2
+          className={`${classNameTitleLevel2}${
+            center ? ` ${style(centerCenter)}` : ''
+          }`}
+        >
+          {content}
+        </h2>
+      )
+    case 3:
+      return (
+        <h3
+          className={`${classNameTitleLevel3}${
+            center ? ` ${style(centerCenter)}` : ''
+          }`}
+        >
+          {content}
+        </h3>
+      )
 
-      default:
-        return null
-    }
+    default:
+      return null
   }
 }

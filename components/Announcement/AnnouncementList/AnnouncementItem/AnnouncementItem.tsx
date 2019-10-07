@@ -13,56 +13,52 @@ const className = style({
 
 export interface IAnnouncementItemProps extends IAnnouncement {}
 
-export class AnnouncementItem extends React.PureComponent<
-  IAnnouncementItemProps
-> {
-  render() {
-    const {
-      courseDuration,
-      description,
-      identifier,
-      locationIndication,
-      price,
-      publishTime,
-      type,
-    } = this.props
-    return (
-      <div
-        className={`${className} ${style({
-          borderColor: colors[type]
-            ? colors[type].toHexString()
-            : colors.dark.toHexString(),
-          borderLeftStyle: 'solid',
-          borderWidth: em(0.5),
-        })}`}
-      >
-        {type === 'apartment' && (
-          <Apartment
-            description={description}
-            identifier={identifier}
-            locationIndication={locationIndication}
-            price={price}
-            publishTime={publishTime}
-          />
-        )}
-        {type === 'learning' && (
-          <Learning
-            courseDuration={courseDuration}
-            description={description}
-            identifier={identifier}
-            price={price}
-            publishTime={publishTime}
-          />
-        )}
-        {type === 'request' && (
-          <Request
-            description={description}
-            identifier={identifier}
-            locationIndication={locationIndication}
-            publishTime={publishTime}
-          />
-        )}
-      </div>
-    )
-  }
+export const AnnouncementItem = (props: IAnnouncementItemProps) => {
+  const {
+    courseDuration,
+    description,
+    identifier,
+    locationIndication,
+    price,
+    publishTime,
+    type,
+  } = props
+  return (
+    <div
+      className={`${className} ${style({
+        borderColor: colors[type]
+          ? colors[type].toHexString()
+          : colors.dark.toHexString(),
+        borderLeftStyle: 'solid',
+        borderWidth: em(0.5),
+      })}`}
+    >
+      {type === 'apartment' && (
+        <Apartment
+          description={description}
+          identifier={identifier}
+          locationIndication={locationIndication}
+          price={price}
+          publishTime={publishTime}
+        />
+      )}
+      {type === 'learning' && (
+        <Learning
+          courseDuration={courseDuration}
+          description={description}
+          identifier={identifier}
+          price={price}
+          publishTime={publishTime}
+        />
+      )}
+      {type === 'request' && (
+        <Request
+          description={description}
+          identifier={identifier}
+          locationIndication={locationIndication}
+          publishTime={publishTime}
+        />
+      )}
+    </div>
+  )
 }

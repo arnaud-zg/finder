@@ -4,16 +4,7 @@ import { format } from 'date-fns'
 import React from 'react'
 import { style } from 'typestyle'
 import { colors } from '../../../../../constants/colors'
-import { Paragraph } from '../../../../Paragraph'
 import { Title } from '../../../../Title'
-
-interface IProps {
-  courseDuration: string
-  description: string
-  identifier: string
-  price: number
-  publishTime: string
-}
 
 const tagClassname = style(inlineBlock, padding(rem(0.25)), {
   backgroundColor: colors.gray.toHexString(),
@@ -27,27 +18,24 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
     },
   },
 })
+interface IProps {
+  courseDuration: string
+  description: string
+  identifier: string
+  price: number
+  publishTime: string
+}
 
-export class Learning extends React.Component<IProps> {
-  render() {
-    const {
-      courseDuration,
-      description,
-      identifier,
-      price,
-      publishTime,
-    } = this.props
-    return (
-      <div id={identifier}>
-        <Title content={description} level={3} />
-        {!!courseDuration && (
-          <div className={tagClassname}>{courseDuration}</div>
-        )}
-        {!!price && <div className={tagClassname}>{price / 100} €</div>}
-        <div className={tagClassname}>
-          {format(new Date(publishTime), "dd/MM/yyyy 'at' HH:mm")}
-        </div>
+export const Learning = (props: IProps) => {
+  const { courseDuration, description, identifier, price, publishTime } = props
+  return (
+    <div id={identifier}>
+      <Title content={description} level={3} />
+      {!!courseDuration && <div className={tagClassname}>{courseDuration}</div>}
+      {!!price && <div className={tagClassname}>{price / 100} €</div>}
+      <div className={tagClassname}>
+        {format(new Date(publishTime), "dd/MM/yyyy 'at' HH:mm")}
       </div>
-    )
-  }
+    </div>
+  )
 }

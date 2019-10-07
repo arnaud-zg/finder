@@ -7,13 +7,6 @@ import { colors } from '../../../../../constants/colors'
 import { Paragraph } from '../../../../Paragraph'
 import { Title } from '../../../../Title'
 
-interface IProps {
-  description: string
-  identifier: string
-  locationIndication: string
-  publishTime: string
-}
-
 const tagClassname = style(inlineBlock, padding(rem(0.25)), {
   backgroundColor: colors.gray.toHexString(),
   borderRadius: rem(0.25),
@@ -30,27 +23,26 @@ const tagClassname = style(inlineBlock, padding(rem(0.25)), {
 const locationIndicationClassName = style(inlineBlock, {
   textDecoration: 'underline',
 })
+interface IProps {
+  description: string
+  identifier: string
+  locationIndication: string
+  publishTime: string
+}
 
-export class Request extends React.Component<IProps> {
-  render() {
-    const {
-      description,
-      identifier,
-      locationIndication,
-      publishTime,
-    } = this.props
-    return (
-      <div id={identifier}>
-        <Title content={description} level={3} />
-        {!!locationIndication && (
-          <div className={locationIndicationClassName}>
-            <Paragraph content={locationIndication} />
-          </div>
-        )}
-        <div className={tagClassname}>
-          {format(new Date(publishTime), "dd/MM/yyyy 'at' HH:mm")}
+export const Request = (props: IProps) => {
+  const { description, identifier, locationIndication, publishTime } = props
+  return (
+    <div id={identifier}>
+      <Title content={description} level={3} />
+      {!!locationIndication && (
+        <div className={locationIndicationClassName}>
+          <Paragraph content={locationIndication} />
         </div>
+      )}
+      <div className={tagClassname}>
+        {format(new Date(publishTime), "dd/MM/yyyy 'at' HH:mm")}
       </div>
-    )
-  }
+    </div>
+  )
 }
