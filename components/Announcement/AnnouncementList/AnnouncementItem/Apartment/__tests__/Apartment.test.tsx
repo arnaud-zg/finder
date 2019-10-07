@@ -1,8 +1,13 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Apartment } from '../Apartment'
+import * as ApartmentIndex from '../'
+import { Apartment } from '../'
 
 describe('Apartment', () => {
+  it('should take a snapshot of ApartmentIndex', () => {
+    expect(ApartmentIndex).toMatchSnapshot()
+  })
+
   it('renders correctly', () => {
     const testRenderer = renderer.create(
       <Apartment

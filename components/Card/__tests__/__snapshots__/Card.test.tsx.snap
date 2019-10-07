@@ -7,3 +7,9 @@ exports[`Card renders correctly 1`] = `
   Hello World
 </div>
 `;
+
+exports[`Card should take a snapshot of CardIndex 1`] = `
+Object {
+  "Card": [Function],
+}
+`;

@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Request } from '../Request'
+import { Request } from '../'
 
 describe('Request', () => {
   it('renders correctly', () => {

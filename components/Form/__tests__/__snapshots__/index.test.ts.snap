@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should take a snapshot of FormIndex 1`] = `
+Object {
+  "ErrorField": [Function],
+  "NumberInput": [Function],
+  "Select": [Function],
+  "TextArea": [Function],
+  "TextInput": [Function],
+}
+`;

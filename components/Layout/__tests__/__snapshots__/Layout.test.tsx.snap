@@ -40,3 +40,9 @@ Array [
   />,
 ]
 `;
+
+exports[`Layout should take a snapshot of LayoutIndex 1`] = `
+Object {
+  "Layout": [Function],
+}
+`;

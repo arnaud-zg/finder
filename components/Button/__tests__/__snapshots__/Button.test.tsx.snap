@@ -8,3 +8,9 @@ exports[`Button renders correctly 1`] = `
   Submit
 </button>
 `;
+
+exports[`Button should take a snapshot of ButtonIndex 1`] = `
+Object {
+  "Button": [Function],
+}
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberInput renders correctly 1`] = `
+<input
+  className="f13jo2op"
+  name="phone"
+  onBlur={[Function]}
+  onChange={[Function]}
+  type="number"
+  value=""
+/>
+`;
