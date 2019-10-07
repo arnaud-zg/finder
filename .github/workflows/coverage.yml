@@ -1,4 +1,4 @@
-name: Finder CI
+name: Finder Coverage Report
 
 on: [push]
 
@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [8.x]
 
     steps:
       - uses: actions/checkout@v1
@@ -19,9 +19,9 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
-      - name: Build package
-        run: |
-          yarn run --if-present build
       - name: Unit test
         run: |
-          yarn run test
+          yarn run test:coverage:report
+        env:
+          CI: true
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
