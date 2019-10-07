@@ -7,6 +7,7 @@
     "dev": "next dev",
     "export": "next export",
     "format": "prettier --write \"**/*.tsx\"",
+    "release": "standard-version",
     "start": "next start",
     "test:coverage:report": "yarn run test:coverage && codecov -f coverage/*.json",
     "test:coverage": "yarn run test --coverage",
@@ -35,6 +36,7 @@
     "jest": "24.9.0",
     "prettier": "1.18.2",
     "react-test-renderer": "16.10.2",
+    "standard-version": "^7.0.0",
     "ts-jest": "24.1.0",
     "typescript": "3.6.3"
   }
