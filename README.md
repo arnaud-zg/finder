@@ -20,7 +20,7 @@ yarn@1.9.4
 Install project dependencies, it'll create a folder `node_modules/` with all dependencies
 
 ```
-yarn
+> yarn
 ```
 
 ### Run
@@ -30,7 +30,7 @@ yarn
 Run project with developer mode
 
 ```
-yarn dev
+> yarn dev
 ```
 
 #### Classic mode
@@ -38,8 +38,8 @@ yarn dev
 Run project with classic mode
 
 ```
-yarn build
-yarn start
+> yarn build
+> yarn start
 ```
 
 ## Running the tests
@@ -47,7 +47,7 @@ yarn start
 Run unit test with jest
 
 ```
-yarn test
+> yarn test
 ```
 
 ## Built With
