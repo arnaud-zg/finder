@@ -16,13 +16,11 @@ interface IProps {
   fieldName: string
 }
 
-export class ErrorField extends React.PureComponent<IProps> {
-  render() {
-    const { fieldName } = this.props
-    return (
-      <ErrorMessage name={fieldName}>
-        {message => <span className={className}>{message}</span>}
-      </ErrorMessage>
-    )
-  }
+export const ErrorField = (props: IProps) => {
+  const { fieldName } = props
+  return (
+    <ErrorMessage name={fieldName}>
+      {message => <span className={className}>{message}</span>}
+    </ErrorMessage>
+  )
 }

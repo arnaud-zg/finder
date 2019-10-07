@@ -48,20 +48,16 @@ const className = style({
   },
 })
 
-export class Navigation extends React.PureComponent {
-  render() {
-    return (
-      <nav className={className}>
-        <ul>
-          {routes.map(({ href, label }) => (
-            <li key={href}>
-              <Link href={href}>
-                <a>{label}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    )
-  }
-}
+export const Navigation = () => (
+  <nav className={className}>
+    <ul>
+      {routes.map(({ href, label }) => (
+        <li key={href}>
+          <Link href={href}>
+            <a>{label}</a>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)

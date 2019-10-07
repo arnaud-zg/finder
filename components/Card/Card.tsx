@@ -1,7 +1,6 @@
+import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import { rem } from 'csx'
-import { BoxFunction, BoxUnit } from 'csstips'
 import { colors } from '../../constants/colors'
 
 const className = style({
@@ -12,9 +11,7 @@ const className = style({
   marginTop: rem(1),
 })
 
-export class Card extends React.PureComponent {
-  render() {
-    const { children } = this.props
-    return <div className={className}>{children}</div>
-  }
+export const Card = props => {
+  const { children } = props
+  return <div className={className}>{children}</div>
 }
