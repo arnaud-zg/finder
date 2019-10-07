@@ -4,7 +4,7 @@ Simple platform to post announcements, I made it for a job. About constraints, i
 
 ## Getting Started
 
-These instructions will let you know how to handle the project and running on your local machine for development and testing purposes. ~~See deployment for notes on how to deploy the project on a live system.~~
+These instructions will let you know how to handle the project and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -49,6 +49,10 @@ Run unit test with jest
 ```
 > yarn test
 ```
+
+## Deployment
+
+Deployment is performed with Zeit Now.
 
 ## Built With
 
