@@ -2,7 +2,7 @@ import { rem } from 'csx'
 import { ErrorMessage } from 'formik'
 import React from 'react'
 import { style } from 'typestyle'
-import { colors } from '../../constants/colors'
+import { colors } from '../../../constants/colors'
 
 const className = style({
   color: colors.error.toHexString(),

@@ -3,7 +3,7 @@ import { Field } from 'formik'
 import React from 'react'
 import { style } from 'typestyle'
 import { colors } from '../../../constants/colors'
-import { ErrorField } from '../../ErrorField'
+import { ErrorField } from '../ErrorField'
 
 const INPUT_TYPE_TEXT = 'text'
 
