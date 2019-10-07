@@ -5,7 +5,7 @@ import { Layout } from '../components/Layout'
 import { Paragraph } from '../components/Paragraph'
 import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 
-interface IProps {
+interface IAboutProps {
   page: {
     description: string
     disambiguatingDescription: string
@@ -13,7 +13,7 @@ interface IProps {
   }
 }
 
-const AboutPage = (props: IProps) => {
+const AboutPage = (props: IAboutProps) => {
   const { page } = props
   const { description } = page
 

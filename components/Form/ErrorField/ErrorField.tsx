@@ -12,11 +12,11 @@ const className = style({
   marginBottom: rem(0.5),
 })
 
-interface IProps {
+interface IErrorFieldProps {
   fieldName: string
 }
 
-export const ErrorField = (props: IProps) => {
+export const ErrorField = (props: IErrorFieldProps) => {
   const { fieldName } = props
   return (
     <ErrorMessage name={fieldName}>

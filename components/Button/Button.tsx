@@ -20,9 +20,9 @@ const className = style({
   },
 })
 
-interface IProps extends React.HTMLProps<HTMLButtonElement> {}
+interface IButtonProps extends React.HTMLProps<HTMLButtonElement> {}
 
-export const Button = (props: IProps) => {
+export const Button = (props: IButtonProps) => {
   const { children } = props
   return (
     <button className={className} type="submit">

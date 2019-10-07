@@ -18,11 +18,11 @@ const className = style({
   padding: rem(0.25),
 })
 
-interface IProps extends React.HTMLProps<HTMLSelectElement> {
+interface ISelectProps extends React.HTMLProps<HTMLSelectElement> {
   options: JSX.Element[]
 }
 
-export const Select = (props: IProps) => {
+export const Select = (props: ISelectProps) => {
   const { options } = props
   return (
     <Field component="select" name={props.name} className={className}>

@@ -18,9 +18,9 @@ const className = style({
   width: percent(100),
 })
 
-interface IProps extends React.HTMLProps<HTMLInputElement> {}
+interface ITextInputProps extends React.HTMLProps<HTMLInputElement> {}
 
-export const TextInput = (props: IProps) => (
+export const TextInput = (props: ITextInputProps) => (
   <Field name={props.name}>
     {({ field }) => (
       <>

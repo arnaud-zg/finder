@@ -21,7 +21,7 @@ interface IBlock {
   identifier: string
 }
 
-export interface IProps {
+export interface IAnnouncementPageProps {
   formSchemas: IFormSchema[]
   entities: {
     [entityId: string]: IAnnouncementListProps | IAnnouncementCreateProps
@@ -34,7 +34,7 @@ export interface IProps {
   }
 }
 
-const AnnouncementPage = (props: IProps) => {
+const AnnouncementPage = (props: IAnnouncementPageProps) => {
   const { formSchemas, entities: initialEntities, page } = props
   const { blocks, description } = page
   const {
