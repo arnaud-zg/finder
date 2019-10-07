@@ -1,5 +1,5 @@
 import NProgress from 'nprogress'
-import { IProps as IAnnouncementItemProps } from '../components/AnnouncementList/AnnouncementItem'
+import { IAnnouncementItemProps } from '../components/Announcement'
 import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 
 export const addAnnouncement = async (

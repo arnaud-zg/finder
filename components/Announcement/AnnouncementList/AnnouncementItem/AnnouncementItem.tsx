@@ -1,17 +1,17 @@
 import { em, rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import { colors } from '../../../constants/colors'
-import { Apartment } from '../../Apartment'
-import { Learning } from '../../Learning'
-import { Request } from '../../Request'
+import { colors } from '../../../../constants/colors'
+import { Apartment } from './Apartment'
+import { Learning } from './Learning'
+import { Request } from './Request'
 
 const className = style({
   marginLeft: rem(0.5),
   marginRight: rem(0.5),
 })
 
-export interface IProps {
+export interface IAnnouncementItemProps {
   courseDuration?: string
   description: string
   identifier: string
@@ -22,7 +22,9 @@ export interface IProps {
   visibility: AnnouncementVisiblity
 }
 
-export class AnnouncementItem extends React.PureComponent<IProps> {
+export class AnnouncementItem extends React.PureComponent<
+  IAnnouncementItemProps
+> {
   render() {
     const {
       courseDuration,

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
-import { IProps as IAnnouncementCreateProps } from '../components/AnnouncementCreate'
-import { IProps as IAnnouncementListProps } from '../components/AnnouncementList'
+import {
+  IAnnouncementCreateProps,
+  IAnnouncementListProps,
+} from '../components/Announcement'
 import { addAnnouncement } from '../services/announcementCreate'
 
 export const useAnnouncementCreateApi = (initialEntities: {

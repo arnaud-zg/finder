@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Learning } from '../Learning'
+import { Learning } from '.'
 
 describe('Learning', () => {
   it('renders correctly', () => {

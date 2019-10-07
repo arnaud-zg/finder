@@ -3,9 +3,9 @@ import { rem } from 'csx'
 import { format } from 'date-fns'
 import React from 'react'
 import { style } from 'typestyle'
-import { colors } from '../../constants/colors'
-import { Paragraph } from '../Paragraph'
-import { Title } from '../Title'
+import { colors } from '../../../../../constants/colors'
+import { Paragraph } from '../../../../Paragraph'
+import { Title } from '../../../../Title'
 
 interface IProps {
   description: string
