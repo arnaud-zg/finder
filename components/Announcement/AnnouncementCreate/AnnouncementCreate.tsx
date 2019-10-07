@@ -1,11 +1,8 @@
 import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import { Title } from '../Title'
-import {
-  AnnouncementCreateClassic,
-  IFormData,
-} from './AnnouncementCreateClassic'
+import { Title } from '../../Title'
+import { AnnouncementCreateClassic } from './AnnouncementCreateClassic'
 
 export interface IFormSchema {
   type: 'classic' | 'express'
@@ -28,13 +25,15 @@ const className = style({
   marginTop: rem(1),
 })
 
-export interface IProps {
+export interface IAnnouncementCreateProps {
   formSchema: IFormSchema
   mode: 'classic' | 'express'
   onSubmit: (formData: IFormData) => void
 }
 
-export class AnnouncementCreate extends React.PureComponent<IProps> {
+export class AnnouncementCreate extends React.PureComponent<
+  IAnnouncementCreateProps
+> {
   render() {
     const { formSchema, mode, onSubmit } = this.props
     return (

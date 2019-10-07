@@ -1,10 +1,7 @@
 import NProgress from 'nprogress'
-import { IProps as IAnnouncementItemProps } from '../components/AnnouncementList/AnnouncementItem'
 import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 
-export const addAnnouncement = async (
-  payload
-): Promise<IAnnouncementItemProps> =>
+export const addAnnouncement = async (payload): Promise<IAnnouncement> =>
   await new Promise((resolve, reject) => {
     NProgress.start()
     setTimeout(() => {

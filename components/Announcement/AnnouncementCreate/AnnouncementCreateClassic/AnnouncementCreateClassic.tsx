@@ -1,16 +1,16 @@
 import { Formik, FormikProps, FormikValues } from 'formik'
 import React from 'react'
 import { style } from 'typestyle'
-import { FORM_INPUT_FIELD_PLACEHOLDER_MAPPING } from '../../../constants/form'
+import { FORM_INPUT_FIELD_PLACEHOLDER_MAPPING } from '../../../../constants/form'
 import {
   getFormFieldNames,
   getFormInitialValues,
   getFormValidationSchema,
-} from '../../../utils/form'
-import { Button } from '../../Button'
-import { NumberInput, TextArea, TextInput } from '../../Form'
-import { Select } from '../../Select'
-import { Title } from '../../Title'
+} from '../../../../utils/form'
+import { Button } from '../../../Button'
+import { NumberInput, TextArea, TextInput } from '../../../Form'
+import { Select } from '../../../Select'
+import { Title } from '../../../Title'
 import { IFormSchema } from '../AnnouncementCreate'
 
 const className = style({})
@@ -20,16 +20,14 @@ const ctaClassName = style({
   justifyContent: 'center',
 })
 
-export interface IFormData {
-  [fieldName: string]: string
-}
-
-interface IProps {
+interface IAnnouncementCreateClassicProps {
   formSchema: IFormSchema
   onSubmit: (formData: IFormData) => void
 }
 
-export class AnnouncementCreateClassic extends React.PureComponent<IProps> {
+export class AnnouncementCreateClassic extends React.PureComponent<
+  IAnnouncementCreateClassicProps
+> {
   render() {
     const { formSchema, onSubmit } = this.props
     const fieldNames = getFormFieldNames(formSchema)

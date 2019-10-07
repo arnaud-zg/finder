@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-import { IFormSchema, IFormSchemaField } from '../components/AnnouncementCreate'
+import { IFormSchema, IFormSchemaField } from '../components/Announcement'
 
 export const getFormFieldNames = (formSchema: IFormSchema) =>
   Object.keys(formSchema.properties)

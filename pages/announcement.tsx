@@ -2,20 +2,19 @@ import Head from 'next/head'
 import React from 'react'
 import {
   AnnouncementCreate,
+  IAnnouncementCreateProps,
   IFormSchema,
-  IProps as IAnnouncementCreateProps,
-} from '../components/AnnouncementCreate'
-import { IFormData } from '../components/AnnouncementCreate/AnnouncementCreateClassic'
+} from '../components/Announcement'
 import {
   AnnouncementList,
-  IProps as IAnnouncementListProps,
-} from '../components/AnnouncementList'
+  IAnnouncementListProps,
+} from '../components/Announcement/AnnouncementList'
 import { Card } from '../components/Card'
 import { Layout } from '../components/Layout'
 import { Paragraph } from '../components/Paragraph'
+import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 import { useAnnouncementCreateApi } from '../hooks/announcementCreate'
 import { payload } from '../__mocks__/getAnnouncement.resolve'
-import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 
 interface IBlock {
   entityId: string
