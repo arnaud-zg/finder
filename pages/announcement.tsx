@@ -3,7 +3,6 @@ import React from 'react'
 import {
   AnnouncementCreate,
   IAnnouncementCreateProps,
-  IFormData,
   IFormSchema,
 } from '../components/Announcement'
 import {

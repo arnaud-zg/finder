@@ -11,16 +11,7 @@ const className = style({
   marginRight: rem(0.5),
 })
 
-export interface IAnnouncementItemProps {
-  courseDuration?: string
-  description: string
-  identifier: string
-  locationIndication: string
-  price: number
-  publishTime: string
-  type: AnnouncementType
-  visibility: AnnouncementVisiblity
-}
+export interface IAnnouncementItemProps extends IAnnouncement {}
 
 export class AnnouncementItem extends React.PureComponent<
   IAnnouncementItemProps

@@ -1,3 +1,14 @@
-type AnnouncementType = 'apartment' | 'learning' | 'request'
+type TAnnouncementType = 'apartment' | 'learning' | 'request'
 
-type AnnouncementVisiblity = 'public' | 'private'
+type TAnnouncementVisiblity = 'public' | 'private'
+
+interface IAnnouncement {
+  courseDuration?: string
+  description: string
+  identifier: string
+  locationIndication: string
+  price: number
+  publishTime: string
+  type: TAnnouncementType
+  visibility: TAnnouncementVisiblity
+}

@@ -20,10 +20,6 @@ const ctaClassName = style({
   justifyContent: 'center',
 })
 
-export interface IFormData {
-  [fieldName: string]: string
-}
-
 interface IAnnouncementCreateClassicProps {
   formSchema: IFormSchema
   onSubmit: (formData: IFormData) => void

@@ -2,10 +2,7 @@ import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
 import { Title } from '../../Title'
-import {
-  AnnouncementCreateClassic,
-  IFormData,
-} from './AnnouncementCreateClassic'
+import { AnnouncementCreateClassic } from './AnnouncementCreateClassic'
 
 export interface IFormSchema {
   type: 'classic' | 'express'
