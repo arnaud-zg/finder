@@ -19,19 +19,13 @@ const className = style({
   width: percent(100),
 })
 
-interface IProps extends React.HTMLProps<HTMLInputElement> {}
-
-export class TextArea extends React.PureComponent<IProps> {
-  render() {
-    return (
-      <Field name={this.props.name}>
-        {({ field }) => (
-          <>
-            <textarea {...field} {...this.props} className={className} />
-            <ErrorField fieldName={field.name} />
-          </>
-        )}
-      </Field>
-    )
-  }
-}
+export const TextArea = props => (
+  <Field name={props.name}>
+    {({ field }) => (
+      <>
+        <textarea {...field} {...props} className={className} />
+        <ErrorField fieldName={field.name} />
+      </>
+    )}
+  </Field>
+)

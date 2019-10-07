@@ -31,21 +31,17 @@ export interface IAnnouncementCreateProps {
   onSubmit: (formData: IFormData) => void
 }
 
-export class AnnouncementCreate extends React.PureComponent<
-  IAnnouncementCreateProps
-> {
-  render() {
-    const { formSchema, mode, onSubmit } = this.props
-    return (
-      <div className={className}>
-        {mode === 'classic' && (
-          <AnnouncementCreateClassic
-            formSchema={formSchema}
-            onSubmit={onSubmit}
-          />
-        )}
-        {mode === 'express' && <Title content="Express" level={3} />}
-      </div>
-    )
-  }
+export const AnnouncementCreate = (props: IAnnouncementCreateProps) => {
+  const { formSchema, mode, onSubmit } = props
+  return (
+    <div className={className}>
+      {mode === 'classic' && (
+        <AnnouncementCreateClassic
+          formSchema={formSchema}
+          onSubmit={onSubmit}
+        />
+      )}
+      {mode === 'express' && <Title content="Express" level={3} />}
+    </div>
+  )
 }

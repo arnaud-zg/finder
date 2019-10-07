@@ -11,17 +11,13 @@ export interface IAnnouncementListProps {
   list: IAnnouncementItemProps[]
 }
 
-export class AnnouncementList extends React.PureComponent<
-  IAnnouncementListProps
-> {
-  render() {
-    const { list } = this.props
-    return (
-      <div className={className}>
-        {list.map(item => (
-          <AnnouncementItem key={item.identifier} {...item} />
-        ))}
-      </div>
-    )
-  }
+export const AnnouncementList = (props: IAnnouncementListProps) => {
+  const { list } = props
+  return (
+    <div className={className}>
+      {list.map(item => (
+        <AnnouncementItem key={item.identifier} {...item} />
+      ))}
+    </div>
+  )
 }

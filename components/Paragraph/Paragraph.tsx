@@ -13,13 +13,11 @@ interface IProps {
   content: string
 }
 
-export class Paragraph extends React.PureComponent<IProps> {
-  render() {
-    const { center, content } = this.props
-    return (
-      <p className={`${className}${center ? ` ${style(centerCenter)}` : ''}`}>
-        {content}
-      </p>
-    )
-  }
+export const Paragraph = (props: IProps) => {
+  const { center, content } = props
+  return (
+    <p className={`${className}${center ? ` ${style(centerCenter)}` : ''}`}>
+      {content}
+    </p>
+  )
 }
