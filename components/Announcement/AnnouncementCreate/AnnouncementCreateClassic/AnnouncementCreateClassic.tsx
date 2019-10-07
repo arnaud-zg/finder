@@ -8,8 +8,7 @@ import {
   getFormValidationSchema,
 } from '../../../../utils/form'
 import { Button } from '../../../Button'
-import { NumberInput, TextArea, TextInput } from '../../../Form'
-import { Select } from '../../../Select'
+import { NumberInput, Select, TextArea, TextInput } from '../../../Form'
 import { Title } from '../../../Title'
 import { IFormSchema } from '../AnnouncementCreate'
 

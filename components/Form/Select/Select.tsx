@@ -2,7 +2,7 @@ import { rem } from 'csx'
 import { Field } from 'formik'
 import React from 'react'
 import { style } from 'typestyle'
-import { colors } from '../../constants/colors'
+import { colors } from '../../../constants/colors'
 
 const className = style({
   backgroundColor: colors.light.toHexString(),
