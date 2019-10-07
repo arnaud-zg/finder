@@ -8,9 +8,25 @@ exports[`Title renders correctly with property level 1 1`] = `
 </h1>
 `;
 
+exports[`Title renders correctly with property level 1 2`] = `
+<h1
+  className="f9o1qoo f1jc9aff"
+>
+  Hello World
+</h1>
+`;
+
 exports[`Title renders correctly with property level 2 1`] = `
 <h2
   className="f113tx4b"
+>
+  Hello World
+</h2>
+`;
+
+exports[`Title renders correctly with property level 2 2`] = `
+<h2
+  className="f113tx4b f1jc9aff"
 >
   Hello World
 </h2>
@@ -23,3 +39,13 @@ exports[`Title renders correctly with property level 3 1`] = `
   Hello World
 </h3>
 `;
+
+exports[`Title renders correctly with property level 3 2`] = `
+<h3
+  className="fhwo3dt f1jc9aff"
+>
+  Hello World
+</h3>
+`;
+
+exports[`Title renders null 1`] = `null`;

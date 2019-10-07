@@ -31,3 +31,9 @@ exports[`Apartment renders correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Apartment should take a snapshot of ApartmentIndex 1`] = `
+Object {
+  "Apartment": [Function],
+}
+`;
