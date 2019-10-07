@@ -2,10 +2,10 @@ import { percent, rem } from 'csx'
 import { Field } from 'formik'
 import React from 'react'
 import { style } from 'typestyle'
-import { colors } from '../../constants/colors'
-import { ErrorField } from '../ErrorField'
+import { colors } from '../../../constants/colors'
+import { ErrorField } from '../../ErrorField'
 
-const INPUT_TYPE_TEXT = 'text'
+const INPUT_TYPE_NUMBER = 'number'
 
 const className = style({
   borderColor: colors.gray.toHexString(),
@@ -20,7 +20,7 @@ const className = style({
 
 interface IProps extends React.HTMLProps<HTMLInputElement> {}
 
-export class TextInput extends React.PureComponent<IProps> {
+export class NumberInput extends React.PureComponent<IProps> {
   render() {
     return (
       <Field name={this.props.name}>
@@ -30,7 +30,7 @@ export class TextInput extends React.PureComponent<IProps> {
               {...field}
               {...this.props}
               className={className}
-              type={INPUT_TYPE_TEXT}
+              type={INPUT_TYPE_NUMBER}
             />
             <ErrorField fieldName={field.name} />
           </>

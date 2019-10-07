@@ -8,12 +8,10 @@ import {
   getFormValidationSchema,
 } from '../../../utils/form'
 import { Button } from '../../Button'
+import { NumberInput, TextArea, TextInput } from '../../Form'
 import { Select } from '../../Select'
-import { TextArea } from '../../TextArea'
-import { TextInput } from '../../TextInput'
 import { Title } from '../../Title'
 import { IFormSchema } from '../AnnouncementCreate'
-import { NumberInput } from '../../NumberInput'
 
 const className = style({})
 
