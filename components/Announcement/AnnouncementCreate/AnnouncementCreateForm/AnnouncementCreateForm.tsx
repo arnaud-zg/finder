@@ -19,14 +19,12 @@ const ctaClassName = style({
   justifyContent: 'center',
 })
 
-interface IAnnouncementCreateClassicProps {
+interface IAnnouncementCreateFormProps {
   formSchema: IFormSchema
   onSubmit: (formData: IFormData) => void
 }
 
-export const AnnouncementCreateClassic = (
-  props: IAnnouncementCreateClassicProps
-) => {
+export const AnnouncementCreateForm = (props: IAnnouncementCreateFormProps) => {
   const { formSchema, onSubmit } = props
   const fieldNames = getFormFieldNames(formSchema)
   const formInitialValues = getFormInitialValues(formSchema)
@@ -34,7 +32,7 @@ export const AnnouncementCreateClassic = (
 
   return (
     <div className={className}>
-      <Title content="Classic" level={2} />
+      <Title content={formSchema.type} level={2} />
       <Formik
         initialValues={formInitialValues}
         validationSchema={validationSchema}

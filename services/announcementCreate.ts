@@ -16,7 +16,7 @@ export const addAnnouncement = async (payload): Promise<IAnnouncement> =>
         resolve({
           description: '------',
           identifier: new Date().toISOString(),
-          locationIndication: null,
+          locationIndication: undefined,
           price: 0,
           publishTime: new Date().toISOString(),
           type,
@@ -30,7 +30,7 @@ export const addAnnouncement = async (payload): Promise<IAnnouncement> =>
           price,
           publishTime: new Date().toISOString(),
           type,
-          visibility,
+          visibility: visibility || 'public',
         })
       }
       NProgress.done()
