@@ -1,8 +1,8 @@
+import classNames from 'classnames'
 import { centerCenter } from 'csstips'
 import { percent, rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import classNames from 'classnames'
 
 const classNameTitleLevel1 = style({
   fontSize: `${rem(3)}`,
