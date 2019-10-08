@@ -7,7 +7,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 🐛 Bug Fixes
 
-* **deps:** update dependency next to v9.1.1 ([#76](https://github.com/arnaud-zg/finder/issues/76)) ([0c91a50](https://github.com/arnaud-zg/finder/commit/0c91a50))
 * **form:** display randomly express form ([#80](https://github.com/arnaud-zg/finder/issues/80)) ([b5b186e](https://github.com/arnaud-zg/finder/commit/b5b186e))
 * **item:** display overlay on private announcement item ([#82](https://github.com/arnaud-zg/finder/issues/82)) ([da78919](https://github.com/arnaud-zg/finder/commit/da78919))
 * **layout:** add vertical padding on layout component ([#77](https://github.com/arnaud-zg/finder/issues/77)) ([300bf68](https://github.com/arnaud-zg/finder/commit/300bf68))
@@ -17,13 +16,6 @@ All notable changes to this project will be documented in this file. See [standa
 ### 🔧 Chore
 
 * **classnames:** handle multiple classnames on a element ([#79](https://github.com/arnaud-zg/finder/issues/79)) ([cc1d1b1](https://github.com/arnaud-zg/finder/commit/cc1d1b1))
-* **deps:** pin dependency standard-version to 7.0.0 ([#75](https://github.com/arnaud-zg/finder/issues/75)) ([a7551d8](https://github.com/arnaud-zg/finder/commit/a7551d8))
-* **release:** 0.1.2 ([a87b64d](https://github.com/arnaud-zg/finder/commit/a87b64d))
-
-
-### 🚇 Continuous Integration
-
-* **coverage:** send coverage report only one time ([#73](https://github.com/arnaud-zg/finder/issues/73)) ([42b450b](https://github.com/arnaud-zg/finder/commit/42b450b))
 
 ### [0.1.2](https://github.com/arnaud-zg/finder/compare/v0.1.1...v0.1.2) (2019-10-08)
 
