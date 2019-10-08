@@ -2,7 +2,7 @@
 
 exports[`Title renders correctly with property level 1 1`] = `
 <h1
-  className="f9o1qoo"
+  className="f1u5qyil"
 >
   Hello World
 </h1>
@@ -10,7 +10,7 @@ exports[`Title renders correctly with property level 1 1`] = `
 
 exports[`Title renders correctly with property level 1 2`] = `
 <h1
-  className="f9o1qoo f1jc9aff"
+  className="f1u5qyil f1jc9aff"
 >
   Hello World
 </h1>
@@ -18,7 +18,7 @@ exports[`Title renders correctly with property level 1 2`] = `
 
 exports[`Title renders correctly with property level 2 1`] = `
 <h2
-  className="f113tx4b"
+  className="ftzwl4g"
 >
   Hello World
 </h2>
@@ -26,7 +26,7 @@ exports[`Title renders correctly with property level 2 1`] = `
 
 exports[`Title renders correctly with property level 2 2`] = `
 <h2
-  className="f113tx4b f1jc9aff"
+  className="ftzwl4g f1jc9aff"
 >
   Hello World
 </h2>
@@ -34,7 +34,7 @@ exports[`Title renders correctly with property level 2 2`] = `
 
 exports[`Title renders correctly with property level 3 1`] = `
 <h3
-  className="fhwo3dt"
+  className="fiird0z"
 >
   Hello World
 </h3>
@@ -42,7 +42,7 @@ exports[`Title renders correctly with property level 3 1`] = `
 
 exports[`Title renders correctly with property level 3 2`] = `
 <h3
-  className="fhwo3dt f1jc9aff"
+  className="fiird0z f1jc9aff"
 >
   Hello World
 </h3>
