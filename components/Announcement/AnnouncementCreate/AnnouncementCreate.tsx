@@ -1,8 +1,7 @@
 import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import { Title } from '../../Title'
-import { AnnouncementCreateClassic } from './AnnouncementCreateClassic'
+import { AnnouncementCreateForm } from './AnnouncementCreateForm'
 
 export interface IFormSchema {
   type: 'classic' | 'express'
@@ -32,16 +31,10 @@ export interface IAnnouncementCreateProps {
 }
 
 export const AnnouncementCreate = (props: IAnnouncementCreateProps) => {
-  const { formSchema, mode, onSubmit } = props
+  const { formSchema, onSubmit } = props
   return (
     <div className={className}>
-      {mode === 'classic' && (
-        <AnnouncementCreateClassic
-          formSchema={formSchema}
-          onSubmit={onSubmit}
-        />
-      )}
-      {mode === 'express' && <Title content="Express" level={3} />}
+      <AnnouncementCreateForm formSchema={formSchema} onSubmit={onSubmit} />
     </div>
   )
 }

@@ -12,9 +12,8 @@ import {
 import { Card } from '../components/Card'
 import { Layout } from '../components/Layout'
 import { Paragraph } from '../components/Paragraph'
-import { RESPONSE_DURATION_IN_MS } from '../constants/api'
 import { useAnnouncementCreateApi } from '../hooks/announcementCreate'
-import { payload } from '../__mocks__/getAnnouncement.resolve'
+import { getAnnouncementPagePayload } from '../__mocks__/getAnnouncement.resolve'
 
 interface IBlock {
   entityId: string
@@ -96,9 +95,7 @@ const AnnouncementPage = (props: IAnnouncementPageProps) => {
 }
 
 AnnouncementPage.getInitialProps = async () => {
-  await new Promise(resolve => {
-    setTimeout(resolve, RESPONSE_DURATION_IN_MS)
-  })
+  const payload = await getAnnouncementPagePayload()
 
   return {
     ...payload,
