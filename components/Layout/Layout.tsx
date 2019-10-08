@@ -4,7 +4,7 @@ import { rem } from 'csx'
 import { Navigation } from '../Navigation'
 
 const className = style({
-  padding: `0 ${rem(1.5)}`,
+  padding: `${rem(0.5)} ${rem(1.5)}`,
 })
 
 interface IState {
