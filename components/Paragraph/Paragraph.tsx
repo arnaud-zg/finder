@@ -1,7 +1,8 @@
+import classNames from 'classnames'
+import { centerCenter } from 'csstips'
+import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import { rem } from 'csx'
-import { centerCenter } from 'csstips'
 
 const className = style({
   fontSize: rem(1),
@@ -16,7 +17,7 @@ interface IParagraphProps {
 export const Paragraph = (props: IParagraphProps) => {
   const { center, content } = props
   return (
-    <p className={`${className}${center ? ` ${style(centerCenter)}` : ''}`}>
+    <p className={classNames(className, center ? style(centerCenter) : null)}>
       {content}
     </p>
   )

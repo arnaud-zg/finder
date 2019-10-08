@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { em, rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
@@ -25,13 +26,16 @@ export const AnnouncementItem = (props: IAnnouncementItemProps) => {
   } = props
   return (
     <div
-      className={`${className} ${style({
-        borderColor: colors[type]
-          ? colors[type].toHexString()
-          : colors.dark.toHexString(),
-        borderLeftStyle: 'solid',
-        borderWidth: em(0.5),
-      })}`}
+      className={classNames(
+        className,
+        style({
+          borderColor: colors[type]
+            ? colors[type].toHexString()
+            : colors.dark.toHexString(),
+          borderLeftStyle: 'solid',
+          borderWidth: em(0.5),
+        })
+      )}
     >
       {type === 'apartment' && (
         <Apartment
