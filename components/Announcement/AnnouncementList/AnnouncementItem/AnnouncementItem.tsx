@@ -10,6 +10,22 @@ import { Request } from './Request'
 const className = style({
   marginLeft: rem(0.5),
   marginRight: rem(0.5),
+  position: 'relative',
+})
+
+const privateItemClassName = style({
+  $nest: {
+    '&::after': {
+      backgroundColor: colors.lightGray.toHexString(),
+      content: `''`,
+      height: '100%',
+      left: 0,
+      opacity: 0.8,
+      position: 'absolute',
+      top: 0,
+      width: '100%',
+    },
+  },
 })
 
 export interface IAnnouncementItemProps extends IAnnouncement {}
@@ -23,6 +39,7 @@ export const AnnouncementItem = (props: IAnnouncementItemProps) => {
     price,
     publishTime,
     type,
+    visibility,
   } = props
   return (
     <div
@@ -34,7 +51,8 @@ export const AnnouncementItem = (props: IAnnouncementItemProps) => {
             : colors.dark.toHexString(),
           borderLeftStyle: 'solid',
           borderWidth: em(0.5),
-        })
+        }),
+        visibility === 'private' ? privateItemClassName : undefined
       )}
     >
       {type === 'apartment' && (
