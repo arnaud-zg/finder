@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { centerCenter } from 'csstips'
 import { percent, rem } from 'csx'
 import React from 'react'
@@ -46,9 +47,10 @@ export const Title = (props: ITitleProps) => {
     case 1:
       return (
         <h1
-          className={`${classNameTitleLevel1}${
-            center ? ` ${style(centerCenter)}` : ''
-          }`}
+          className={classNames(
+            classNameTitleLevel1,
+            center ? style(centerCenter) : null
+          )}
         >
           {content}
         </h1>
@@ -56,9 +58,10 @@ export const Title = (props: ITitleProps) => {
     case 2:
       return (
         <h2
-          className={`${classNameTitleLevel2}${
-            center ? ` ${style(centerCenter)}` : ''
-          }`}
+          className={classNames(
+            classNameTitleLevel2,
+            center ? style(centerCenter) : null
+          )}
         >
           {content}
         </h2>
@@ -66,9 +69,10 @@ export const Title = (props: ITitleProps) => {
     case 3:
       return (
         <h3
-          className={`${classNameTitleLevel3}${
-            center ? ` ${style(centerCenter)}` : ''
-          }`}
+          className={classNames(
+            classNameTitleLevel3,
+            center ? style(centerCenter) : null
+          )}
         >
           {content}
         </h3>
