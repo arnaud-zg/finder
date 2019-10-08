@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/arnaud-zg/finder/compare/v0.1.1...v0.1.2) (2019-10-08)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency next to v9.1.1 ([#76](https://github.com/arnaud-zg/finder/issues/76)) ([0c91a50](https://github.com/arnaud-zg/finder/commit/0c91a50))
+
+
+### 🔧 Chore
+
+* **deps:** pin dependency standard-version to 7.0.0 ([#75](https://github.com/arnaud-zg/finder/issues/75)) ([a7551d8](https://github.com/arnaud-zg/finder/commit/a7551d8))
+
+
+### 🚇 Continuous Integration
+
+* **coverage:** send coverage report only one time ([#73](https://github.com/arnaud-zg/finder/issues/73)) ([42b450b](https://github.com/arnaud-zg/finder/commit/42b450b))
+
 ### [0.1.1](https://github.com/arnaud-zg/finder/compare/v0.1.0...v0.1.1) (2019-10-07)
 
 ## 0.1.0 (2019-10-07)
