@@ -40,6 +40,6 @@
     "react-test-renderer": "16.10.2",
     "standard-version": "7.0.0",
     "ts-jest": "24.1.0",
-    "typescript": "3.6.3"
+    "typescript": "3.6.4"
   }
 }
