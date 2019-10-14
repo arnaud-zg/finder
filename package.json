@@ -30,7 +30,7 @@
     "@types/node": "12.7.12",
     "@types/nprogress": "0.2.0",
     "@types/react": "16.9.5",
-    "@types/react-test-renderer": "16.9.0",
+    "@types/react-test-renderer": "16.9.1",
     "@types/yup": "0.26.24",
     "codecov": "3.6.1",
     "csstips": "1.2.0",
