@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/arnaud-zg/finder/compare/v0.1.3...v0.1.4) (2019-10-14)
+
+
+### 🔧 Chore
+
+* **changelog:** remove duplicate lines ([#84](https://github.com/arnaud-zg/finder/issues/84)) ([5b782d5](https://github.com/arnaud-zg/finder/commit/5b782d5))
+* **deps:** pin dependencies ([#81](https://github.com/arnaud-zg/finder/issues/81)) ([0550e7c](https://github.com/arnaud-zg/finder/commit/0550e7c))
+* **deps:** update dependency @types/jest to v24.0.19 ([#87](https://github.com/arnaud-zg/finder/issues/87)) ([09b24f8](https://github.com/arnaud-zg/finder/commit/09b24f8))
+* **deps:** update dependency @types/node to v12.7.12 ([#85](https://github.com/arnaud-zg/finder/issues/85)) ([a0c46d4](https://github.com/arnaud-zg/finder/commit/a0c46d4))
+* **deps:** update dependency typescript to v3.6.4 ([#86](https://github.com/arnaud-zg/finder/issues/86)) ([0fc212a](https://github.com/arnaud-zg/finder/commit/0fc212a))
+
 ### [0.1.3](https://github.com/arnaud-zg/finder/compare/v0.1.1...v0.1.3) (2019-10-08)
 
 
