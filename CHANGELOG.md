@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/arnaud-zg/finder/compare/v0.1.4...v0.1.5) (2019-10-16)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency date-fns to v2.5.0 ([#93](https://github.com/arnaud-zg/finder/issues/93)) ([7da27c5](https://github.com/arnaud-zg/finder/commit/7da27c5))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/node to v12.11.0 ([#91](https://github.com/arnaud-zg/finder/issues/91)) ([bc9c453](https://github.com/arnaud-zg/finder/commit/bc9c453))
+* **deps:** update dependency @types/react to v16.9.6 ([#89](https://github.com/arnaud-zg/finder/issues/89)) ([402ff0d](https://github.com/arnaud-zg/finder/commit/402ff0d))
+* **deps:** update dependency @types/react to v16.9.7 ([#90](https://github.com/arnaud-zg/finder/issues/90)) ([c1d10c7](https://github.com/arnaud-zg/finder/commit/c1d10c7))
+* **deps:** update dependency @types/react-test-renderer to v16.9.1 ([#88](https://github.com/arnaud-zg/finder/issues/88)) ([b6bc173](https://github.com/arnaud-zg/finder/commit/b6bc173))
+
 ### [0.1.4](https://github.com/arnaud-zg/finder/compare/v0.1.3...v0.1.4) (2019-10-14)
 
 
