@@ -940,9 +940,9 @@
   dependencies:
     "@types/jest-diff" "*"
 
-"@types/node@12.11.2":
-  version "12.11.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.2.tgz#75ba3beda30d690b89a5089ca1c6e8e386150b76"
+"@types/node@12.11.3":
+  version "12.11.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.3.tgz#582052915e50820b7416115386e606c27d5e399f"
 
 "@types/nprogress@0.2.0":
   version "0.2.0"
