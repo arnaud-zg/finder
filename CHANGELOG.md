@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/arnaud-zg/finder/compare/v0.1.5...v0.1.6) (2019-10-22)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency date-fns to v2.5.1 ([#95](https://github.com/arnaud-zg/finder/issues/95)) ([4fca0ea](https://github.com/arnaud-zg/finder/commit/4fca0ea))
+* **deps:** update dependency date-fns to v2.6.0 ([#97](https://github.com/arnaud-zg/finder/issues/97)) ([f424b90](https://github.com/arnaud-zg/finder/commit/f424b90))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/node to v12.11.1 ([#92](https://github.com/arnaud-zg/finder/issues/92)) ([75b249c](https://github.com/arnaud-zg/finder/commit/75b249c))
+* **deps:** update dependency @types/node to v12.11.2 ([#96](https://github.com/arnaud-zg/finder/issues/96)) ([e348559](https://github.com/arnaud-zg/finder/commit/e348559))
+* **deps:** update dependency @types/react to v16.9.9 ([#94](https://github.com/arnaud-zg/finder/issues/94)) ([364f509](https://github.com/arnaud-zg/finder/commit/364f509))
+
 ### [0.1.5](https://github.com/arnaud-zg/finder/compare/v0.1.4...v0.1.5) (2019-10-16)
 
 
