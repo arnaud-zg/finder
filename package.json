@@ -19,8 +19,8 @@
     "formik": "1.5.8",
     "next": "9.1.1",
     "nprogress": "0.2.0",
-    "react": "16.10.2",
-    "react-dom": "16.10.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
     "typestyle": "2.0.4",
     "yup": "0.27.0"
   },
@@ -37,7 +37,7 @@
     "csx": "10.0.0",
     "jest": "24.9.0",
     "prettier": "1.18.2",
-    "react-test-renderer": "16.10.2",
+    "react-test-renderer": "16.11.0",
     "standard-version": "7.0.0",
     "ts-jest": "24.1.0",
     "typescript": "3.6.4"
