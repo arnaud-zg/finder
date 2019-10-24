@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/arnaud-zg/finder/compare/v0.1.6...v0.1.7) (2019-10-24)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update react monorepo to v16.11.0 ([#101](https://github.com/arnaud-zg/finder/issues/101)) ([79934e7](https://github.com/arnaud-zg/finder/commit/79934e7))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/node to v12.11.3 ([#98](https://github.com/arnaud-zg/finder/issues/98)) ([dc9fa27](https://github.com/arnaud-zg/finder/commit/dc9fa27))
+* **deps:** update dependency @types/node to v12.11.5 ([#100](https://github.com/arnaud-zg/finder/issues/100)) ([a31703a](https://github.com/arnaud-zg/finder/commit/a31703a))
+* **deps:** update dependency @types/node to v12.11.6 ([#102](https://github.com/arnaud-zg/finder/issues/102)) ([1cefa61](https://github.com/arnaud-zg/finder/commit/1cefa61))
+* **deps:** update node.js to v10.17.0 ([#99](https://github.com/arnaud-zg/finder/issues/99)) ([51ece9d](https://github.com/arnaud-zg/finder/commit/51ece9d))
+
 ### [0.1.6](https://github.com/arnaud-zg/finder/compare/v0.1.5...v0.1.6) (2019-10-22)
 
 
