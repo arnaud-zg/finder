@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/arnaud-zg/finder/compare/v0.1.8...v0.1.9) (2019-10-31)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency formik to v2.0.2 ([#108](https://github.com/arnaud-zg/finder/issues/108)) ([b323f91](https://github.com/arnaud-zg/finder/commit/b323f91))
+* **deps:** update dependency formik to v2.0.3 ([#109](https://github.com/arnaud-zg/finder/issues/109)) ([bbfe762](https://github.com/arnaud-zg/finder/commit/bbfe762))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.0.21 ([#111](https://github.com/arnaud-zg/finder/issues/111)) ([0380a51](https://github.com/arnaud-zg/finder/commit/0380a51))
+* **deps:** update dependency @types/node to v12.12.0 ([#112](https://github.com/arnaud-zg/finder/issues/112)) ([1b7b067](https://github.com/arnaud-zg/finder/commit/1b7b067))
+* **deps:** update dependency @types/node to v12.12.3 ([#113](https://github.com/arnaud-zg/finder/issues/113)) ([5b9cf2f](https://github.com/arnaud-zg/finder/commit/5b9cf2f))
+
 ### [0.1.8](https://github.com/arnaud-zg/finder/compare/v0.1.7...v0.1.8) (2019-10-25)
 
 
