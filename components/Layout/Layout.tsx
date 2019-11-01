@@ -1,6 +1,7 @@
+import classNames from 'classnames'
+import { rem } from 'csx'
 import React from 'react'
 import { style } from 'typestyle'
-import { rem } from 'csx'
 import { Navigation } from '../Navigation'
 
 const className = style({
@@ -26,18 +27,20 @@ export class Layout extends React.PureComponent<{}, IState> {
     const { children } = this.props
     const { isDomRendered } = this.state
     return (
-      <>
-        {isDomRendered ? (
-          <>
-            <Navigation />
-            <div className={className}>{children}</div>
-          </>
-        ) : (
+      <div
+        className={classNames(
+          'main-container',
+          isDomRendered ? 'main-container--ready' : null
+        )}
+      >
+        <Navigation />
+        <div className={className}>{children}</div>
+        {!isDomRendered && (
           <div id="loading">
             <img src="/static/loading.gif" />
           </div>
         )}
-      </>
+      </div>
     )
   }
 }
