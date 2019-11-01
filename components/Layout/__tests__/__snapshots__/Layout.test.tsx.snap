@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Layout renders correctly 1`] = `
-Array [
+<div
+  className="main-container main-container--ready"
+>
   <nav
     className="f1lqund8"
   >
@@ -34,11 +36,11 @@ Array [
         </a>
       </li>
     </ul>
-  </nav>,
+  </nav>
   <div
     className="fg3spf3"
-  />,
-]
+  />
+</div>
 `;
 
 exports[`Layout should take a snapshot of LayoutIndex 1`] = `
