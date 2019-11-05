@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/arnaud-zg/finder/compare/v0.1.9...v0.1.10) (2019-11-05)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency next to v9.1.2 ([#110](https://github.com/arnaud-zg/finder/issues/110)) ([3a34366](https://github.com/arnaud-zg/finder/commit/3a34366))
+* **ssr:** display content on server rendering moment ([#114](https://github.com/arnaud-zg/finder/issues/114)) ([d84723e](https://github.com/arnaud-zg/finder/commit/d84723e))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/node to v12.12.4 ([#115](https://github.com/arnaud-zg/finder/issues/115)) ([d8de22f](https://github.com/arnaud-zg/finder/commit/d8de22f))
+* **deps:** update dependency @types/node to v12.12.5 ([#116](https://github.com/arnaud-zg/finder/issues/116)) ([b76c9f3](https://github.com/arnaud-zg/finder/commit/b76c9f3))
+* **deps:** update dependency typescript to v3.7.2 ([#117](https://github.com/arnaud-zg/finder/issues/117)) ([fb2a167](https://github.com/arnaud-zg/finder/commit/fb2a167))
+
 ### [0.1.9](https://github.com/arnaud-zg/finder/compare/v0.1.8...v0.1.9) (2019-10-31)
 
 
