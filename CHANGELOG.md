@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/arnaud-zg/finder/compare/v0.1.10...v0.1.11) (2019-11-09)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency date-fns to v2.7.0 ([#120](https://github.com/arnaud-zg/finder/issues/120)) ([794aa69](https://github.com/arnaud-zg/finder/commit/794aa69))
+* **deps:** update dependency next to v9.1.3 ([#122](https://github.com/arnaud-zg/finder/issues/122)) ([52f14f9](https://github.com/arnaud-zg/finder/commit/52f14f9))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.0.22 ([#119](https://github.com/arnaud-zg/finder/issues/119)) ([fccca11](https://github.com/arnaud-zg/finder/commit/fccca11))
+* **deps:** update dependency @types/node to v12.12.6 ([#118](https://github.com/arnaud-zg/finder/issues/118)) ([6fdf742](https://github.com/arnaud-zg/finder/commit/6fdf742))
+* **deps:** update dependency prettier to v1.19.0 ([#124](https://github.com/arnaud-zg/finder/issues/124)) ([26d9075](https://github.com/arnaud-zg/finder/commit/26d9075))
+
 ### [0.1.10](https://github.com/arnaud-zg/finder/compare/v0.1.9...v0.1.10) (2019-11-05)
 
 
