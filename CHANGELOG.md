@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.12](https://github.com/arnaud-zg/finder/compare/v0.1.11...v0.1.12) (2019-11-16)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency formik to v2.0.4 ([#127](https://github.com/arnaud-zg/finder/issues/127)) ([35f260e](https://github.com/arnaud-zg/finder/commit/35f260e))
+* **deps:** update react monorepo to v16.12.0 ([#128](https://github.com/arnaud-zg/finder/issues/128)) ([baa112a](https://github.com/arnaud-zg/finder/commit/baa112a))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/jest to v24.0.23 ([#126](https://github.com/arnaud-zg/finder/issues/126)) ([1ffb9e1](https://github.com/arnaud-zg/finder/commit/1ffb9e1))
+* **deps:** update dependency @types/node to v12.12.7 ([#123](https://github.com/arnaud-zg/finder/issues/123)) ([7f021d4](https://github.com/arnaud-zg/finder/commit/7f021d4))
+* **deps:** update dependency prettier to v1.19.1 ([#125](https://github.com/arnaud-zg/finder/issues/125)) ([e82ca88](https://github.com/arnaud-zg/finder/commit/e82ca88))
+
 ### [0.1.11](https://github.com/arnaud-zg/finder/compare/v0.1.10...v0.1.11) (2019-11-09)
 
 
