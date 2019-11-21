@@ -2990,9 +2990,9 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-formik@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/formik/-/formik-2.0.4.tgz#0743a9a5c7ab0a247d3fa2c072d599f221fc8e75"
+formik@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/formik/-/formik-2.0.5.tgz#326b63286e18b0158272203d682242f900cbab21"
   dependencies:
     deepmerge "^2.1.1"
     hoist-non-react-statics "^3.3.0"
