@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.13](https://github.com/arnaud-zg/finder/compare/v0.1.12...v0.1.13) (2019-11-22)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update dependency date-fns to v2.8.0 ([#133](https://github.com/arnaud-zg/finder/issues/133)) ([5db6676](https://github.com/arnaud-zg/finder/commit/5db6676))
+* **deps:** update dependency date-fns to v2.8.1 ([#137](https://github.com/arnaud-zg/finder/issues/137)) ([9461f38](https://github.com/arnaud-zg/finder/commit/9461f38))
+* **deps:** update dependency formik to v2.0.5 ([#135](https://github.com/arnaud-zg/finder/issues/135)) ([c84f931](https://github.com/arnaud-zg/finder/commit/c84f931))
+* **deps:** update dependency formik to v2.0.6 ([#136](https://github.com/arnaud-zg/finder/issues/136)) ([903f4d4](https://github.com/arnaud-zg/finder/commit/903f4d4))
+* **deps:** update dependency next to v9.1.4 ([#132](https://github.com/arnaud-zg/finder/issues/132)) ([13476ae](https://github.com/arnaud-zg/finder/commit/13476ae))
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/node to v12.12.11 ([#134](https://github.com/arnaud-zg/finder/issues/134)) ([1ab6f7b](https://github.com/arnaud-zg/finder/commit/1ab6f7b))
+* **deps:** update dependency @types/node to v12.12.8 ([#129](https://github.com/arnaud-zg/finder/issues/129)) ([dff8bf3](https://github.com/arnaud-zg/finder/commit/dff8bf3))
+* **deps:** update dependency @types/node to v12.12.9 ([#131](https://github.com/arnaud-zg/finder/issues/131)) ([59fb385](https://github.com/arnaud-zg/finder/commit/59fb385))
+* **deps:** update dependency @types/react to v16.9.12 ([#139](https://github.com/arnaud-zg/finder/issues/139)) ([2b14a10](https://github.com/arnaud-zg/finder/commit/2b14a10))
+* **deps:** update dependency standard-version to v7.0.1 ([#130](https://github.com/arnaud-zg/finder/issues/130)) ([71be515](https://github.com/arnaud-zg/finder/commit/71be515))
+* **deps:** update dependency ts-jest to v24.2.0 ([#138](https://github.com/arnaud-zg/finder/issues/138)) ([86d9ca2](https://github.com/arnaud-zg/finder/commit/86d9ca2))
+
 ### [0.1.12](https://github.com/arnaud-zg/finder/compare/v0.1.11...v0.1.12) (2019-11-16)
 
 
