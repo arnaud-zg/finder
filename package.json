@@ -31,7 +31,7 @@
     "@types/nprogress": "0.2.0",
     "@types/react": "16.9.13",
     "@types/react-test-renderer": "16.9.1",
-    "@types/yup": "0.26.25",
+    "@types/yup": "0.26.26",
     "codecov": "3.6.1",
     "csstips": "1.2.0",
     "csx": "10.0.0",
