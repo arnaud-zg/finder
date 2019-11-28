@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.14](https://github.com/arnaud-zg/finder/compare/v0.1.13...v0.1.14) (2019-11-28)
+
+
+### 🔧 Chore
+
+* **deps:** update dependency @types/node to v12.12.12 ([#140](https://github.com/arnaud-zg/finder/issues/140)) ([27f5979](https://github.com/arnaud-zg/finder/commit/27f5979))
+* **deps:** update dependency @types/node to v12.12.14 ([#142](https://github.com/arnaud-zg/finder/issues/142)) ([acea3b1](https://github.com/arnaud-zg/finder/commit/acea3b1))
+* **deps:** update dependency @types/react to v16.9.13 ([#141](https://github.com/arnaud-zg/finder/issues/141)) ([869a749](https://github.com/arnaud-zg/finder/commit/869a749))
+* **deps:** update dependency @types/yup to v0.26.25 ([#143](https://github.com/arnaud-zg/finder/issues/143)) ([c512aba](https://github.com/arnaud-zg/finder/commit/c512aba))
+* **deps:** update dependency @types/yup to v0.26.26 ([#144](https://github.com/arnaud-zg/finder/issues/144)) ([62c2196](https://github.com/arnaud-zg/finder/commit/62c2196))
+
 ### [0.1.13](https://github.com/arnaud-zg/finder/compare/v0.1.12...v0.1.13) (2019-11-22)
 
 
